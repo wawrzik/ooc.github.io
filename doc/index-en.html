@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>The OWL Ontology of Consciousness</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://www.w3id.org/people/wawrzik/ooc","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://www.w3id.org/people/wawrzik/ooc","name":"The OWL Ontology of Consciousness", "headline":"Document describing the ontology https://www.w3id.org/people/wawrzik/ooc", "dateReleased":"OWL Ontology of Consciousness", "version":"1.1.0", "author":[{"@type":"Person","name":"Frank Wawrzik"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>The OWL Ontology of Consciousness</h1>
+<h2>Release: OWL Ontology of Consciousness</h2>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://www.w3id.org/people/wawrzik/ooc/1.1.0">https://www.w3id.org/people/wawrzik/ooc/1.1.0</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="https://www.w3id.org/people/wawrzik/ooc">https://www.w3id.org/people/wawrzik/ooc</a></dd>
+<dt>Revision:</dt>
+<dd>1.1.0</dd>
+<dt>Authors:</dt>
+<dd>Frank Wawrzik</dd>
+
+<dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="https://info.arxiv.org/help/license/images/cc-by-sa.png" width="118" height="41"  alt="https://creativecommons.org/licenses/by-sa/4.0/" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Frank Wawrzik. Revision: 1.1.0. Retrieved from: https://www.w3id.org/people/wawrzik/ooc/1.1.0</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This ontology serves as a standard to employ consciousness technologies for modern computer systems. The basis is that everything in the universe emits an energy pattern that can be read throughout time and space. These energy patterns are represented in levels according to the Map of Consciousness© by Dr. David R. Hawkins. They have been encoded in the Ontolgoy Web Language (OWL) to support computer readability, processing and understandability. Further some basic axioms are formulated to support reasoning capabilities.
+</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+The basic building block of this ontology is the "object of Truth." This includes everything. It can be simple objects like movies, books, persons, animals, places, locations, art, sculptures, software etc. But can also be events, activities, qualitites, functions or more complex artifacts. For example the happening of an event may span across certain countries. But you want to look at an event in a particular country. In this case the "object of Truth" needs to be defined with context and multiple triples in the knowledge base. The second most important class is the class "levels of consciousness." It relates a quantity to the object under consideration ("object of Truth"). This holds in both directions which improves database queries. 
+<br>
+(PDF) An OWL Ontology of Consciousness. Available from: https://www.researchgate.net/publication/383227961_An_OWL_Ontology_of_Consciousness [accessed Aug 24 2024].
+<br>
+<br>
+The other parts of the ontology give a contextualization to the core of the ontology. It is the ego of the person who perceives about the content of reality, but is oblivious to the essence of context or what something actually means. The basic conundrum of the human mind, which is unable to distinguish Truth from falsehood. Each level of consciousness is further formalized with its energy.
+<br>
+<br>
+Fig. 1. gives an outline of the core of the ontology.
+<br>
+<br>
+<img src=”ooc_core.png” alt="OWL Ontology of Consciousness Core Overview"></span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://www.semanticweb.org/frank/ontologies/2023/7/untitled-ontology-33#&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1/&gt;</td></tr>
+<tr><td><b>obo</b></td><td>&lt;http://purl.obolibrary.org/obo/&gt;</td></tr>
+<tr><td><b>om-2</b></td><td>&lt;http://www.ontology-of-units-of-measure.org/resource/om-2/&gt;</td></tr>
+<tr><td><b>ooc</b></td><td>&lt;https://www.w3id.org/people/wawrzik/ooc#&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">OWL Ontology of Consciousness: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#acceptance"
+         title="https://www.w3id.org/people/wawrzik/ooc#acceptance">
+         <span>acceptance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">
+         <span>Agent</span>
+      </a>
+   </li>
+   <li>
+      <a href="#anger" title="https://www.w3id.org/people/wawrzik/ooc#anger">
+         <span>anger</span>
+      </a>
+   </li>
+   <li>
+      <a href="#apathy" title="https://www.w3id.org/people/wawrzik/ooc#apathy">
+         <span>apathy</span>
+      </a>
+   </li>
+   <li>
+      <a href="#avatar" title="https://www.w3id.org/people/wawrzik/ooc#avatar">
+         <span>avatar</span>
+      </a>
+   </li>
+   <li>
+      <a href="#awakened" title="https://www.w3id.org/people/wawrzik/ooc#awakened">
+         <span>awakened</span>
+      </a>
+   </li>
+   <li>
+      <a href="#awakening"
+         title="https://www.w3id.org/people/wawrzik/ooc#awakening">
+         <span>awakening</span>
+      </a>
+   </li>
+   <li>
+      <a href="#awareness"
+         title="https://www.w3id.org/people/wawrzik/ooc#awareness">
+         <span>awareness</span>
+      </a>
+   </li>
+   <li>
+      <a href="#bhakti_yoga"
+         title="https://www.w3id.org/people/wawrzik/ooc#bhakti_yoga">bhakti yoga</a>
+   </li>
+   <li>
+      <a href="#Buddha" title="https://www.w3id.org/people/wawrzik/ooc#Buddha">
+         <span>Buddha</span>
+      </a>
+   </li>
+   <li>
+      <a href="#consciousness"
+         title="https://www.w3id.org/people/wawrzik/ooc#consciousness">
+         <span>consciousness</span>
+      </a>
+   </li>
+   <li>
+      <a href="#contemplation"
+         title="https://www.w3id.org/people/wawrzik/ooc#contemplation">
+         <span>contemplation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#content" title="https://www.w3id.org/people/wawrzik/ooc#content">
+         <span>content</span>
+      </a>
+   </li>
+   <li>
+      <a href="#context" title="https://www.w3id.org/people/wawrzik/ooc#context">
+         <span>context</span>
+      </a>
+   </li>
+   <li>
+      <a href="#contextual_factor"
+         title="https://www.w3id.org/people/wawrzik/ooc#contextual_factor">contextual factor</a>
+   </li>
+   <li>
+      <a href="#courage" title="https://www.w3id.org/people/wawrzik/ooc#courage">
+         <span>courage</span>
+      </a>
+   </li>
+   <li>
+      <a href="#desire" title="https://www.w3id.org/people/wawrzik/ooc#desire">
+         <span>desire</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ecstasy" title="https://www.w3id.org/people/wawrzik/ooc#ecstasy">
+         <span>ecstasy</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ecstatic_dance"
+         title="https://www.w3id.org/people/wawrzik/ooc#ecstatic_dance">ecstatic dance</a>
+   </li>
+   <li>
+      <a href="#ego" title="https://www.w3id.org/people/wawrzik/ooc#ego">ego</a>
+   </li>
+   <li>
+      <a href="#enlightenment"
+         title="https://www.w3id.org/people/wawrzik/ooc#enlightenment">
+         <span>enlightenment</span>
+      </a>
+   </li>
+   <li>
+      <a href="#peace" title="https://www.w3id.org/people/wawrzik/ooc#peace">enlightenment</a>
+   </li>
+   <li>
+      <a href="#level_of_consciousness"
+         title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a>
+   </li>
+   <li>
+      <a href="#excellence"
+         title="https://www.w3id.org/people/wawrzik/ooc#excellence">
+         <span>excellence</span>
+      </a>
+   </li>
+   <li>
+      <a href="#watcher" title="https://www.w3id.org/people/wawrzik/ooc#watcher">experiencer</a>
+   </li>
+   <li>
+      <a href="#falsehood"
+         title="https://www.w3id.org/people/wawrzik/ooc#falsehood">falsehood</a>
+   </li>
+   <li>
+      <a href="#fear" title="https://www.w3id.org/people/wawrzik/ooc#fear">
+         <span>fear</span>
+      </a>
+   </li>
+   <li>
+      <a href="#fields_of_realization"
+         title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a>
+   </li>
+   <li>
+      <a href="#form" title="https://www.w3id.org/people/wawrzik/ooc#form">
+         <span>form</span>
+      </a>
+   </li>
+   <li>
+      <a href="#genius" title="https://www.w3id.org/people/wawrzik/ooc#genius">
+         <span>genius</span>
+      </a>
+   </li>
+   <li>
+      <a href="#God" title="https://www.w3id.org/people/wawrzik/ooc#God">God</a>
+   </li>
+   <li>
+      <a href="#unmanifest"
+         title="https://www.w3id.org/people/wawrzik/ooc#unmanifest">Godhead</a>
+   </li>
+   <li>
+      <a href="#grief" title="https://www.w3id.org/people/wawrzik/ooc#grief">
+         <span>grief</span>
+      </a>
+   </li>
+   <li>
+      <a href="#guilt" title="https://www.w3id.org/people/wawrzik/ooc#guilt">
+         <span>guilt</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hatha_yoga"
+         title="https://www.w3id.org/people/wawrzik/ooc#hatha_yoga">hatha yoga</a>
+   </li>
+   <li>
+      <a href="#Jesus_Christ"
+         title="https://www.w3id.org/people/wawrzik/ooc#Jesus_Christ">Jesus Christ</a>
+   </li>
+   <li>
+      <a href="#unconditional_love"
+         title="https://www.w3id.org/people/wawrzik/ooc#unconditional_love">joy</a>
+   </li>
+   <li>
+      <a href="#keep_holy_company"
+         title="https://www.w3id.org/people/wawrzik/ooc#keep_holy_company">keep holy company</a>
+   </li>
+   <li>
+      <a href="#Krishna" title="https://www.w3id.org/people/wawrzik/ooc#Krishna">
+         <span>Krishna</span>
+      </a>
+   </li>
+   <li>
+      <a href="#kriya_yoga"
+         title="https://www.w3id.org/people/wawrzik/ooc#kriya_yoga">kriya yoga</a>
+   </li>
+   <li>
+      <a href="#kundalini_yoga"
+         title="https://www.w3id.org/people/wawrzik/ooc#kundalini_yoga">kundalini yoga</a>
+   </li>
+   <li>
+      <a href="#letting_go"
+         title="https://www.w3id.org/people/wawrzik/ooc#letting_go">letting go</a>
+   </li>
+   <li>
+      <a href="#light_of_consciousness"
+         title="https://www.w3id.org/people/wawrzik/ooc#light_of_consciousness">light of consciousness</a>
+   </li>
+   <li>
+      <a href="#logic" title="https://www.w3id.org/people/wawrzik/ooc#logic">
+         <span>logic</span>
+      </a>
+   </li>
+   <li>
+      <a href="#love" title="https://www.w3id.org/people/wawrzik/ooc#love">
+         <span>love</span>
+      </a>
+   </li>
+   <li>
+      <a href="#master" title="https://www.w3id.org/people/wawrzik/ooc#master">
+         <span>master</span>
+      </a>
+   </li>
+   <li>
+      <a href="#meditation"
+         title="https://www.w3id.org/people/wawrzik/ooc#meditation">
+         <span>meditation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#neutrality"
+         title="https://www.w3id.org/people/wawrzik/ooc#neutrality">
+         <span>neutrality</span>
+      </a>
+   </li>
+   <li>
+      <a href="#object_of_truth"
+         title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a>
+   </li>
+   <li>
+      <a href="#witness" title="https://www.w3id.org/people/wawrzik/ooc#witness">observer</a>
+   </li>
+   <li>
+      <a href="#perception"
+         title="https://www.w3id.org/people/wawrzik/ooc#perception">
+         <span>perception</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">
+         <span>Person</span>
+      </a>
+   </li>
+   <li>
+      <a href="#prayer" title="https://www.w3id.org/people/wawrzik/ooc#prayer">
+         <span>prayer</span>
+      </a>
+   </li>
+   <li>
+      <a href="#pride" title="https://www.w3id.org/people/wawrzik/ooc#pride">
+         <span>pride</span>
+      </a>
+   </li>
+   <li>
+      <a href="#reason" title="https://www.w3id.org/people/wawrzik/ooc#reason">
+         <span>reason</span>
+      </a>
+   </li>
+   <li>
+      <a href="#recognition"
+         title="https://www.w3id.org/people/wawrzik/ooc#recognition">
+         <span>recognition</span>
+      </a>
+   </li>
+   <li>
+      <a href="#register"
+         title="https://www.w3id.org/people/wawrzik/ooc#register">
+         <span>register</span>
+      </a>
+   </li>
+   <li>
+      <a href="#samadhi" title="https://www.w3id.org/people/wawrzik/ooc#samadhi">
+         <span>samadhi</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Self" title="https://www.w3id.org/people/wawrzik/ooc#Self">Self</a>
+   </li>
+   <li>
+      <a href="#shame" title="https://www.w3id.org/people/wawrzik/ooc#shame">
+         <span>shame</span>
+      </a>
+   </li>
+   <li>
+      <a href="#spiritual_experience"
+         title="https://www.w3id.org/people/wawrzik/ooc#spiritual_experience">spiritual experience</a>
+   </li>
+   <li>
+      <a href="#spiritual_practice"
+         title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a>
+   </li>
+   <li>
+      <a href="#surrender"
+         title="https://www.w3id.org/people/wawrzik/ooc#surrender">
+         <span>surrender</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Truth" title="https://www.w3id.org/people/wawrzik/ooc#Truth">Truth</a>
+   </li>
+   <li>
+      <a href="#willingness"
+         title="https://www.w3id.org/people/wawrzik/ooc#willingness">
+         <span>willingness</span>
+      </a>
+   </li>
+   <li>
+      <a href="#yoga" title="https://www.w3id.org/people/wawrzik/ooc#yoga">
+         <span>yoga</span>
+      </a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#defining_factor_for"
+         title="https://www.w3id.org/people/wawrzik/ooc#defining_factor_for">defining factor for</a>
+   </li>
+   <li>
+      <a href="#has_loc" title="https://www.w3id.org/people/wawrzik/ooc#has_loc">has loc</a>
+   </li>
+   <li>
+      <a href="#has_perception"
+         title="https://www.w3id.org/people/wawrzik/ooc#has_perception">has perception</a>
+   </li>
+   <li>
+      <a href="#is_defined_by_factor_of"
+         title="https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of">is defined by factor of</a>
+   </li>
+   <li>
+      <a href="#is_loc_of"
+         title="https://www.w3id.org/people/wawrzik/ooc#is_loc_of">is loc of</a>
+   </li>
+   <li>
+      <a href="#http://purl.obolibrary.org/obo/BFO_0000050" title="http://purl.obolibrary.org/obo/BFO_0000050">part of</a>
+   </li>
+   <li>
+      <a href="#perception_about"
+         title="https://www.w3id.org/people/wawrzik/ooc#perception_about">perception about</a>
+   </li>
+   <li>
+      <a href="#represents_degree_of"
+         title="https://www.w3id.org/people/wawrzik/ooc#represents_degree_of">represents degree of</a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">OWL Ontology of Consciousness: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serces as a standard to desrcibe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies want to be incorporated by users, researchers and scientiets or the general public.</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for OWL Ontology of Consciousness classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by OWL Ontology of Consciousness.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#acceptance" title="https://www.w3id.org/people/wawrzik/ooc#acceptance"> <span>acceptance</span> </a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent"> <span>Agent</span> </a></li>
+  <li><a href="#anger" title="https://www.w3id.org/people/wawrzik/ooc#anger"> <span>anger</span> </a></li>
+  <li><a href="#apathy" title="https://www.w3id.org/people/wawrzik/ooc#apathy"> <span>apathy</span> </a></li>
+  <li><a href="#avatar" title="https://www.w3id.org/people/wawrzik/ooc#avatar"> <span>avatar</span> </a></li>
+  <li><a href="#awakened" title="https://www.w3id.org/people/wawrzik/ooc#awakened"> <span>awakened</span> </a></li>
+  <li><a href="#awakening" title="https://www.w3id.org/people/wawrzik/ooc#awakening"> <span>awakening</span> </a></li>
+  <li><a href="#awareness" title="https://www.w3id.org/people/wawrzik/ooc#awareness"> <span>awareness</span> </a></li>
+  <li><a href="#bhakti_yoga" title="https://www.w3id.org/people/wawrzik/ooc#bhakti_yoga">bhakti yoga</a></li>
+  <li><a href="#Buddha" title="https://www.w3id.org/people/wawrzik/ooc#Buddha"> <span>Buddha</span> </a></li>
+  <li><a href="#consciousness" title="https://www.w3id.org/people/wawrzik/ooc#consciousness"> <span>consciousness</span> </a></li>
+  <li><a href="#contemplation" title="https://www.w3id.org/people/wawrzik/ooc#contemplation"> <span>contemplation</span> </a></li>
+  <li><a href="#content" title="https://www.w3id.org/people/wawrzik/ooc#content"> <span>content</span> </a></li>
+  <li><a href="#context" title="https://www.w3id.org/people/wawrzik/ooc#context"> <span>context</span> </a></li>
+  <li><a href="#contextual_factor" title="https://www.w3id.org/people/wawrzik/ooc#contextual_factor">contextual factor</a></li>
+  <li><a href="#courage" title="https://www.w3id.org/people/wawrzik/ooc#courage"> <span>courage</span> </a></li>
+  <li><a href="#desire" title="https://www.w3id.org/people/wawrzik/ooc#desire"> <span>desire</span> </a></li>
+  <li><a href="#ecstasy" title="https://www.w3id.org/people/wawrzik/ooc#ecstasy"> <span>ecstasy</span> </a></li>
+  <li><a href="#ecstatic_dance" title="https://www.w3id.org/people/wawrzik/ooc#ecstatic_dance">ecstatic dance</a></li>
+  <li><a href="#ego" title="https://www.w3id.org/people/wawrzik/ooc#ego">ego</a></li>
+  <li><a href="#enlightenment" title="https://www.w3id.org/people/wawrzik/ooc#enlightenment"> <span>enlightenment</span> </a></li>
+  <li><a href="#peace" title="https://www.w3id.org/people/wawrzik/ooc#peace">enlightenment</a></li>
+  <li><a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a></li>
+  <li><a href="#excellence" title="https://www.w3id.org/people/wawrzik/ooc#excellence"> <span>excellence</span> </a></li>
+  <li><a href="#watcher" title="https://www.w3id.org/people/wawrzik/ooc#watcher">experiencer</a></li>
+  <li><a href="#falsehood" title="https://www.w3id.org/people/wawrzik/ooc#falsehood">falsehood</a></li>
+  <li><a href="#fear" title="https://www.w3id.org/people/wawrzik/ooc#fear"> <span>fear</span> </a></li>
+  <li><a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a></li>
+  <li><a href="#form" title="https://www.w3id.org/people/wawrzik/ooc#form"> <span>form</span> </a></li>
+  <li><a href="#genius" title="https://www.w3id.org/people/wawrzik/ooc#genius"> <span>genius</span> </a></li>
+  <li><a href="#God" title="https://www.w3id.org/people/wawrzik/ooc#God">God</a></li>
+  <li><a href="#unmanifest" title="https://www.w3id.org/people/wawrzik/ooc#unmanifest">Godhead</a></li>
+  <li><a href="#grief" title="https://www.w3id.org/people/wawrzik/ooc#grief"> <span>grief</span> </a></li>
+  <li><a href="#guilt" title="https://www.w3id.org/people/wawrzik/ooc#guilt"> <span>guilt</span> </a></li>
+  <li><a href="#hatha_yoga" title="https://www.w3id.org/people/wawrzik/ooc#hatha_yoga">hatha yoga</a></li>
+  <li><a href="#Jesus_Christ" title="https://www.w3id.org/people/wawrzik/ooc#Jesus_Christ">Jesus Christ</a></li>
+  <li><a href="#unconditional_love" title="https://www.w3id.org/people/wawrzik/ooc#unconditional_love">joy</a></li>
+  <li><a href="#keep_holy_company" title="https://www.w3id.org/people/wawrzik/ooc#keep_holy_company">keep holy company</a></li>
+  <li><a href="#Krishna" title="https://www.w3id.org/people/wawrzik/ooc#Krishna"> <span>Krishna</span> </a></li>
+  <li><a href="#kriya_yoga" title="https://www.w3id.org/people/wawrzik/ooc#kriya_yoga">kriya yoga</a></li>
+  <li><a href="#kundalini_yoga" title="https://www.w3id.org/people/wawrzik/ooc#kundalini_yoga">kundalini yoga</a></li>
+  <li><a href="#letting_go" title="https://www.w3id.org/people/wawrzik/ooc#letting_go">letting go</a></li>
+  <li><a href="#light_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#light_of_consciousness">light of consciousness</a></li>
+  <li><a href="#logic" title="https://www.w3id.org/people/wawrzik/ooc#logic"> <span>logic</span> </a></li>
+  <li><a href="#love" title="https://www.w3id.org/people/wawrzik/ooc#love"> <span>love</span> </a></li>
+  <li><a href="#master" title="https://www.w3id.org/people/wawrzik/ooc#master"> <span>master</span> </a></li>
+  <li><a href="#meditation" title="https://www.w3id.org/people/wawrzik/ooc#meditation"> <span>meditation</span> </a></li>
+  <li><a href="#neutrality" title="https://www.w3id.org/people/wawrzik/ooc#neutrality"> <span>neutrality</span> </a></li>
+  <li><a href="#object_of_truth" title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a></li>
+  <li><a href="#witness" title="https://www.w3id.org/people/wawrzik/ooc#witness">observer</a></li>
+  <li><a href="#perception" title="https://www.w3id.org/people/wawrzik/ooc#perception"> <span>perception</span> </a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person"> <span>Person</span> </a></li>
+  <li><a href="#prayer" title="https://www.w3id.org/people/wawrzik/ooc#prayer"> <span>prayer</span> </a></li>
+  <li><a href="#pride" title="https://www.w3id.org/people/wawrzik/ooc#pride"> <span>pride</span> </a></li>
+  <li><a href="#reason" title="https://www.w3id.org/people/wawrzik/ooc#reason"> <span>reason</span> </a></li>
+  <li><a href="#recognition" title="https://www.w3id.org/people/wawrzik/ooc#recognition"> <span>recognition</span> </a></li>
+  <li><a href="#register" title="https://www.w3id.org/people/wawrzik/ooc#register"> <span>register</span> </a></li>
+  <li><a href="#samadhi" title="https://www.w3id.org/people/wawrzik/ooc#samadhi"> <span>samadhi</span> </a></li>
+  <li><a href="#Self" title="https://www.w3id.org/people/wawrzik/ooc#Self">Self</a></li>
+  <li><a href="#shame" title="https://www.w3id.org/people/wawrzik/ooc#shame"> <span>shame</span> </a></li>
+  <li><a href="#spiritual_experience" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_experience">spiritual experience</a></li>
+  <li><a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a></li>
+  <li><a href="#surrender" title="https://www.w3id.org/people/wawrzik/ooc#surrender"> <span>surrender</span> </a></li>
+  <li><a href="#Truth" title="https://www.w3id.org/people/wawrzik/ooc#Truth">Truth</a></li>
+  <li><a href="#willingness" title="https://www.w3id.org/people/wawrzik/ooc#willingness"> <span>willingness</span> </a></li>
+  <li><a href="#yoga" title="https://www.w3id.org/people/wawrzik/ooc#yoga"> <span>yoga</span> </a></li>
+ </ul>
+ <div class="entity" id="acceptance">
+  <h3>acceptance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#acceptance</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 350] and xsd:integer[< 400]) 
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/Agent">
+  <h3>Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Agent</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#object_of_truth" title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#awakened" title="https://www.w3id.org/people/wawrzik/ooc#awakened">awakened</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="anger">
+  <h3>anger<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#anger</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 150] and xsd:integer[< 175])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="apathy">
+  <h3>apathy<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#apathy</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 50] and xsd:integer[< 75])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="avatar">
+  <h3>avatar<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#avatar</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#master" title="https://www.w3id.org/people/wawrzik/ooc#master">master</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Buddha" title="https://www.w3id.org/people/wawrzik/ooc#Buddha">Buddha</a> <sup class="type-c" title="class">c</sup>, <a href="#Jesus_Christ" title="https://www.w3id.org/people/wawrzik/ooc#Jesus_Christ">Jesus Christ</a> <sup class="type-c" title="class">c</sup>, <a href="#Krishna" title="https://www.w3id.org/people/wawrzik/ooc#Krishna">Krishna</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="awakened">
+  <h3>awakened<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#awakened</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#master" title="https://www.w3id.org/people/wawrzik/ooc#master">master</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="awakening">
+  <h3>awakening<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#awakening</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_experience" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_experience">spiritual experience</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="awareness">
+  <h3>awareness<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#awareness</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="bhakti_yoga">
+  <h3>bhakti yoga<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#bhakti_yoga</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#yoga" title="https://www.w3id.org/people/wawrzik/ooc#yoga">yoga</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Buddha">
+  <h3>Buddha<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#Buddha</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#avatar" title="https://www.w3id.org/people/wawrzik/ooc#avatar">avatar</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="consciousness">
+  <h3>consciousness<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#consciousness</p>
+  <div class="comment">
+   <span class="markdown">Consciousness is the irreducible stratum of all that exists</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#content" title="https://www.w3id.org/people/wawrzik/ooc#content">content</a> <sup class="type-c" title="class">c</sup>, <a href="#context" title="https://www.w3id.org/people/wawrzik/ooc#context">context</a> <sup class="type-c" title="class">c</sup>, <a href="#contextual_factor" title="https://www.w3id.org/people/wawrzik/ooc#contextual_factor">contextual factor</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="contemplation">
+  <h3>contemplation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#contemplation</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="content">
+  <h3>content<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#content</p>
+  <div class="comment">
+   <span class="markdown">Content is what we can perceive, see, believe, explain. Content is linear, definable.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#consciousness" title="https://www.w3id.org/people/wawrzik/ooc#consciousness">consciousness</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#object_of_truth" title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="context">
+  <h3>context<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#context</p>
+  <div class="comment">
+   <span class="markdown">Context is what we cannot perceive, see, believe, explain. Context is non-linear, timeless and nonlocal (nondual) and not definable.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#consciousness" title="https://www.w3id.org/people/wawrzik/ooc#consciousness">consciousness</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#God" title="https://www.w3id.org/people/wawrzik/ooc#God">God</a> <sup class="type-c" title="class">c</sup>, <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="contextual_factor">
+  <h3>contextual factor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#contextual_factor</p>
+  <div class="comment">
+   <span class="markdown">The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood are contextual factors. Each contextual factor is an influence on the content under consideration.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>location</pre>
+   </dd>
+   <dd>
+    <pre>time</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#consciousness" title="https://www.w3id.org/people/wawrzik/ooc#consciousness">consciousness</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="courage">
+  <h3>courage<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#courage</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 200] and xsd:integer[< 250])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="desire">
+  <h3>desire<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#desire</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 125] and xsd:integer[< 150])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ecstasy">
+  <h3>ecstasy<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#ecstasy</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 575] and xsd:integer[< 600])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#love" title="https://www.w3id.org/people/wawrzik/ooc#love">love</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ecstatic_dance">
+  <h3>ecstatic dance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#ecstatic_dance</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ego">
+  <h3>ego<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#ego</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#object_of_truth" title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="enlightenment">
+  <h3>enlightenment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#enlightenment</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_experience" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_experience">spiritual experience</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="peace">
+  <h3>enlightenment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#peace</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 600] and xsd:integer[<= 1000])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="level_of_consciousness">
+  <h3>essence<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness</p>
+  <div class="comment">
+   <span class="markdown">A level of consciousness is a quantified logarithmic energy level gauged and calibrated according to the Map of Consciousness (MoC) by Dr. David R. Hawkins</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#context" title="https://www.w3id.org/people/wawrzik/ooc#context">context</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Truth" title="https://www.w3id.org/people/wawrzik/ooc#Truth">Truth</a> <sup class="type-c" title="class">c</sup>, <a href="#acceptance" title="https://www.w3id.org/people/wawrzik/ooc#acceptance">acceptance</a> <sup class="type-c" title="class">c</sup>, <a href="#anger" title="https://www.w3id.org/people/wawrzik/ooc#anger">anger</a> <sup class="type-c" title="class">c</sup>, <a href="#apathy" title="https://www.w3id.org/people/wawrzik/ooc#apathy">apathy</a> <sup class="type-c" title="class">c</sup>, <a href="#courage" title="https://www.w3id.org/people/wawrzik/ooc#courage">courage</a> <sup class="type-c" title="class">c</sup>, <a href="#desire" title="https://www.w3id.org/people/wawrzik/ooc#desire">desire</a> <sup class="type-c" title="class">c</sup>, <a href="#peace" title="https://www.w3id.org/people/wawrzik/ooc#peace">enlightenment</a> <sup class="type-c" title="class">c</sup>, <a href="#falsehood" title="https://www.w3id.org/people/wawrzik/ooc#falsehood">falsehood</a> <sup class="type-c" title="class">c</sup>, <a href="#fear" title="https://www.w3id.org/people/wawrzik/ooc#fear">fear</a> <sup class="type-c" title="class">c</sup>, <a href="#grief" title="https://www.w3id.org/people/wawrzik/ooc#grief">grief</a> <sup class="type-c" title="class">c</sup>, <a href="#guilt" title="https://www.w3id.org/people/wawrzik/ooc#guilt">guilt</a> <sup class="type-c" title="class">c</sup>, <a href="#love" title="https://www.w3id.org/people/wawrzik/ooc#love">love</a> <sup class="type-c" title="class">c</sup>, <a href="#neutrality" title="https://www.w3id.org/people/wawrzik/ooc#neutrality">neutrality</a> <sup class="type-c" title="class">c</sup>, <a href="#pride" title="https://www.w3id.org/people/wawrzik/ooc#pride">pride</a> <sup class="type-c" title="class">c</sup>, <a href="#reason" title="https://www.w3id.org/people/wawrzik/ooc#reason">reason</a> <sup class="type-c" title="class">c</sup>, <a href="#shame" title="https://www.w3id.org/people/wawrzik/ooc#shame">shame</a> <sup class="type-c" title="class">c</sup>, <a href="#willingness" title="https://www.w3id.org/people/wawrzik/ooc#willingness">willingness</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#has_loc" title="https://www.w3id.org/people/wawrzik/ooc#has_loc">has loc</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="excellence">
+  <h3>excellence<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#excellence</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 460] and xsd:integer[< 480])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#reason" title="https://www.w3id.org/people/wawrzik/ooc#reason">reason</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="watcher">
+  <h3>experiencer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#watcher</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="falsehood">
+  <h3>falsehood<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#falsehood</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> xsd:integer[< 200]
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="fear">
+  <h3>fear<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#fear</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 100] and xsd:integer[< 125])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="fields_of_realization">
+  <h3>fields of realization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#fields_of_realization</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#object_of_truth" title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#unmanifest" title="https://www.w3id.org/people/wawrzik/ooc#unmanifest">Godhead</a> <sup class="type-c" title="class">c</sup>, <a href="#Self" title="https://www.w3id.org/people/wawrzik/ooc#Self">Self</a> <sup class="type-c" title="class">c</sup>, <a href="#awareness" title="https://www.w3id.org/people/wawrzik/ooc#awareness">awareness</a> <sup class="type-c" title="class">c</sup>, <a href="#watcher" title="https://www.w3id.org/people/wawrzik/ooc#watcher">experiencer</a> <sup class="type-c" title="class">c</sup>, <a href="#form" title="https://www.w3id.org/people/wawrzik/ooc#form">form</a> <sup class="type-c" title="class">c</sup>, <a href="#light_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#light_of_consciousness">light of consciousness</a> <sup class="type-c" title="class">c</sup>, <a href="#witness" title="https://www.w3id.org/people/wawrzik/ooc#witness">observer</a> <sup class="type-c" title="class">c</sup>, <a href="#recognition" title="https://www.w3id.org/people/wawrzik/ooc#recognition">recognition</a> <sup class="type-c" title="class">c</sup>, <a href="#register" title="https://www.w3id.org/people/wawrzik/ooc#register">register</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="form">
+  <h3>form<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#form</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="genius">
+  <h3>genius<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#genius</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 480] and xsd:integer[< 500])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#reason" title="https://www.w3id.org/people/wawrzik/ooc#reason">reason</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="God">
+  <h3>God<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#God</p>
+  <div class="comment">
+   <span class="markdown">God is an infinite consciousness</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#context" title="https://www.w3id.org/people/wawrzik/ooc#context">context</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="unmanifest">
+  <h3>Godhead<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#unmanifest</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="grief">
+  <h3>grief<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#grief</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 75] and xsd:integer[< 100])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="guilt">
+  <h3>guilt<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#guilt</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 30] and xsd:integer[< 50])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="hatha_yoga">
+  <h3>hatha yoga<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#hatha_yoga</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#yoga" title="https://www.w3id.org/people/wawrzik/ooc#yoga">yoga</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Jesus_Christ">
+  <h3>Jesus Christ<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#Jesus_Christ</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#avatar" title="https://www.w3id.org/people/wawrzik/ooc#avatar">avatar</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="unconditional_love">
+  <h3>joy<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#unconditional_love</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 540] and xsd:integer[< 575])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#love" title="https://www.w3id.org/people/wawrzik/ooc#love">love</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="keep_holy_company">
+  <h3>keep holy company<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#keep_holy_company</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Krishna">
+  <h3>Krishna<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#Krishna</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#avatar" title="https://www.w3id.org/people/wawrzik/ooc#avatar">avatar</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="kriya_yoga">
+  <h3>kriya yoga<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#kriya_yoga</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#yoga" title="https://www.w3id.org/people/wawrzik/ooc#yoga">yoga</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="kundalini_yoga">
+  <h3>kundalini yoga<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#kundalini_yoga</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#yoga" title="https://www.w3id.org/people/wawrzik/ooc#yoga">yoga</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="letting_go">
+  <h3>letting go<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#letting_go</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="light_of_consciousness">
+  <h3>light of consciousness<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#light_of_consciousness</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="logic">
+  <h3>logic<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#logic</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 450] and xsd:integer[<= 450])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#reason" title="https://www.w3id.org/people/wawrzik/ooc#reason">reason</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="love">
+  <h3>love<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#love</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 500] and xsd:integer[< 600])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ecstasy" title="https://www.w3id.org/people/wawrzik/ooc#ecstasy">ecstasy</a> <sup class="type-c" title="class">c</sup>, <a href="#unconditional_love" title="https://www.w3id.org/people/wawrzik/ooc#unconditional_love">joy</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="master">
+  <h3>master<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#master</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#awakened" title="https://www.w3id.org/people/wawrzik/ooc#awakened">awakened</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#avatar" title="https://www.w3id.org/people/wawrzik/ooc#avatar">avatar</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="meditation">
+  <h3>meditation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#meditation</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="neutrality">
+  <h3>neutrality<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#neutrality</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 250] and xsd:integer[< 300])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="object_of_truth">
+  <h3>object of Truth<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#object_of_truth</p>
+  <div class="comment">
+   <span class="markdown">An "object of Truth" is content (a non-contextual entity) that is defined by what the entity means or is and the context that defines the entity. An "object of Truth" is as content related to a contexttual factor or proximate field. But specfically characterized from all other entities (e.g. a bfo:entity) in that it is related to a level of consciousness.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>E.g. a person, a book, a movie, an event, a treatment, a software program, an organization, a country or a statement</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#content" title="https://www.w3id.org/people/wawrzik/ooc#content">content</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="#ego" title="https://www.w3id.org/people/wawrzik/ooc#ego">ego</a> <sup class="type-c" title="class">c</sup>, <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>, <a href="#perception" title="https://www.w3id.org/people/wawrzik/ooc#perception">perception</a> <sup class="type-c" title="class">c</sup>, <a href="#spiritual_experience" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_experience">spiritual experience</a> <sup class="type-c" title="class">c</sup>, <a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#has_loc" title="https://www.w3id.org/people/wawrzik/ooc#has_loc">has loc</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="witness">
+  <h3>observer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#witness</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="perception">
+  <h3>perception<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#perception</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#object_of_truth" title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/Person">
+  <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Person</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="prayer">
+  <h3>prayer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#prayer</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="pride">
+  <h3>pride<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#pride</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 175] and xsd:integer[< 200])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="reason">
+  <h3>reason<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#reason</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> () <span class="logic">and</span> ()
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#excellence" title="https://www.w3id.org/people/wawrzik/ooc#excellence">excellence</a> <sup class="type-c" title="class">c</sup>, <a href="#genius" title="https://www.w3id.org/people/wawrzik/ooc#genius">genius</a> <sup class="type-c" title="class">c</sup>, <a href="#logic" title="https://www.w3id.org/people/wawrzik/ooc#logic">logic</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="recognition">
+  <h3>recognition<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#recognition</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="register">
+  <h3>register<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#register</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="samadhi">
+  <h3>samadhi<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#samadhi</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_experience" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_experience">spiritual experience</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Self">
+  <h3>Self<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#Self</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#fields_of_realization" title="https://www.w3id.org/people/wawrzik/ooc#fields_of_realization">fields of realization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="shame">
+  <h3>shame<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#shame</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 0] and xsd:integer[< 30])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="spiritual_experience">
+  <h3>spiritual experience<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#spiritual_experience</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#object_of_truth" title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#awakening" title="https://www.w3id.org/people/wawrzik/ooc#awakening">awakening</a> <sup class="type-c" title="class">c</sup>, <a href="#enlightenment" title="https://www.w3id.org/people/wawrzik/ooc#enlightenment">enlightenment</a> <sup class="type-c" title="class">c</sup>, <a href="#samadhi" title="https://www.w3id.org/people/wawrzik/ooc#samadhi">samadhi</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="spiritual_practice">
+  <h3>spiritual practice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#spiritual_practice</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#object_of_truth" title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#contemplation" title="https://www.w3id.org/people/wawrzik/ooc#contemplation">contemplation</a> <sup class="type-c" title="class">c</sup>, <a href="#ecstatic_dance" title="https://www.w3id.org/people/wawrzik/ooc#ecstatic_dance">ecstatic dance</a> <sup class="type-c" title="class">c</sup>, <a href="#keep_holy_company" title="https://www.w3id.org/people/wawrzik/ooc#keep_holy_company">keep holy company</a> <sup class="type-c" title="class">c</sup>, <a href="#letting_go" title="https://www.w3id.org/people/wawrzik/ooc#letting_go">letting go</a> <sup class="type-c" title="class">c</sup>, <a href="#meditation" title="https://www.w3id.org/people/wawrzik/ooc#meditation">meditation</a> <sup class="type-c" title="class">c</sup>, <a href="#prayer" title="https://www.w3id.org/people/wawrzik/ooc#prayer">prayer</a> <sup class="type-c" title="class">c</sup>, <a href="#surrender" title="https://www.w3id.org/people/wawrzik/ooc#surrender">surrender</a> <sup class="type-c" title="class">c</sup>, <a href="#yoga" title="https://www.w3id.org/people/wawrzik/ooc#yoga">yoga</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="surrender">
+  <h3>surrender<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#surrender</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Truth">
+  <h3>Truth<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#Truth</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> xsd:integer[>= 200]
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="willingness">
+  <h3>willingness<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#willingness</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" target="_blank" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has Numerical Value</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">some</span> (xsd:integer[>= 300] and xsd:integer[< 350])
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="yoga">
+  <h3>yoga<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#yoga</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#spiritual_practice" title="https://www.w3id.org/people/wawrzik/ooc#spiritual_practice">spiritual practice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#bhakti_yoga" title="https://www.w3id.org/people/wawrzik/ooc#bhakti_yoga">bhakti yoga</a> <sup class="type-c" title="class">c</sup>, <a href="#hatha_yoga" title="https://www.w3id.org/people/wawrzik/ooc#hatha_yoga">hatha yoga</a> <sup class="type-c" title="class">c</sup>, <a href="#kriya_yoga" title="https://www.w3id.org/people/wawrzik/ooc#kriya_yoga">kriya yoga</a> <sup class="type-c" title="class">c</sup>, <a href="#kundalini_yoga" title="https://www.w3id.org/people/wawrzik/ooc#kundalini_yoga">kundalini yoga</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#defining_factor_for" title="https://www.w3id.org/people/wawrzik/ooc#defining_factor_for">defining factor for</a></li>
+  <li><a href="#has_loc" title="https://www.w3id.org/people/wawrzik/ooc#has_loc">has loc</a></li>
+  <li><a href="#has_perception" title="https://www.w3id.org/people/wawrzik/ooc#has_perception">has perception</a></li>
+  <li><a href="#is_defined_by_factor_of" title="https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of">is defined by factor of</a></li>
+  <li><a href="#is_loc_of" title="https://www.w3id.org/people/wawrzik/ooc#is_loc_of">is loc of</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/BFO_0000050" title="http://purl.obolibrary.org/obo/BFO_0000050">part of</a></li>
+  <li><a href="#perception_about" title="https://www.w3id.org/people/wawrzik/ooc#perception_about">perception about</a></li>
+  <li><a href="#represents_degree_of" title="https://www.w3id.org/people/wawrzik/ooc#represents_degree_of">represents degree of</a></li>
+ </ul>
+ <div class="entity" id="defining_factor_for">
+  <h3>defining factor for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#defining_factor_for</p>
+  <div class="comment">
+   <span class="markdown">used ti indicate the influnce of a contextual factor to a conent</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#is_defined_by_factor_of" title="https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of">is defined by factor of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="has_loc">
+  <h3>has loc<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#has_loc</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#object_of_truth" title="https://www.w3id.org/people/wawrzik/ooc#object_of_truth">object of Truth</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#level_of_consciousness" title="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">essence</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#is_loc_of" title="https://www.w3id.org/people/wawrzik/ooc#is_loc_of">is loc of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="has_perception">
+  <h3>has perception<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#has_perception</p>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#perception_about" title="https://www.w3id.org/people/wawrzik/ooc#perception_about">perception about</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="is_defined_by_factor_of">
+  <h3>is defined by factor of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of</p>
+  <div class="comment">
+   <span class="markdown">used to indicate the influnce of a contextual factor to a content by reverse direction</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#defining_factor_for" title="https://www.w3id.org/people/wawrzik/ooc#defining_factor_for">defining factor for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="is_loc_of">
+  <h3>is loc of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#is_loc_of</p>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#has_loc" title="https://www.w3id.org/people/wawrzik/ooc#has_loc">has loc</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/BFO_0000050">
+  <h3>part of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/BFO_0000050</p>
+ </div>
+ <div class="entity" id="perception_about">
+  <h3>perception about<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#perception_about</p>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#has_perception" title="https://www.w3id.org/people/wawrzik/ooc#has_perception">has perception</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="represents_degree_of">
+  <h3>represents degree of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/people/wawrzik/ooc#represents_degree_of</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Frank Wawrzik. An owl ontology of consciousness, Science of Consciousness Conference, Tucson USA, 4 2024. Poster.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
