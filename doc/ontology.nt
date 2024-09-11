@@ -1,0 +1,1583 @@
+<https://www.w3id.org/people/wawrzik/ooc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://www.w3id.org/people/wawrzik/ooc> <http://www.w3.org/2002/07/owl#versionIRI> <https://www.w3id.org/people/wawrzik/ooc/1.1.0> .
+<https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/elements/1.1/description> "The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serces as a standard to desrcibe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies need to be incorporated by users, researchers, scientists or the general public." .
+<https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/elements/1.1/language> "en" .
+<https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0/" .
+<https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/elements/1.1/title> "OWL Ontology of Consciousness" .
+<https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/terms/created> "2024-08-21" .
+<https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/terms/created> "OWL Ontology of Consciousness" .
+<https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/terms/creator> "Frank Wawrzik" .
+<https://www.w3id.org/people/wawrzik/ooc> <http://www.w3.org/2000/01/rdf-schema#label> "The OWL Ontology of Consciousness" .
+<https://www.w3id.org/people/wawrzik/ooc> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/2000/01/rdf-schema#label> "example of usage" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/2000/01/rdf-schema#label> "definition" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.w3.org/2000/01/rdf-schema#label> "term editor" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000600
+<http://purl.obolibrary.org/obo/IAO_0000600> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000600> <http://www.w3.org/2000/01/rdf-schema#label> "elucidation" .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000050
+<http://purl.obolibrary.org/obo/BFO_0000050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000050> <http://www.w3.org/2000/01/rdf-schema#label> "part of" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#defining_factor_for
+<https://www.w3id.org/people/wawrzik/ooc#defining_factor_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/people/wawrzik/ooc#defining_factor_for> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of> .
+<https://www.w3id.org/people/wawrzik/ooc#defining_factor_for> <http://purl.obolibrary.org/obo/IAO_0000115> "used to indicate the influnce of a contextual factor to a conent" .
+<https://www.w3id.org/people/wawrzik/ooc#defining_factor_for> <http://www.w3.org/2000/01/rdf-schema#label> "defining factor for" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#has_loc
+<https://www.w3id.org/people/wawrzik/ooc#has_loc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/people/wawrzik/ooc#has_loc> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/people/wawrzik/ooc#is_loc_of> .
+<https://www.w3id.org/people/wawrzik/ooc#has_loc> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/people/wawrzik/ooc#object_of_truth> .
+<https://www.w3id.org/people/wawrzik/ooc#has_loc> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#has_loc> <http://www.w3.org/2000/01/rdf-schema#label> "has loc" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#has_perception
+<https://www.w3id.org/people/wawrzik/ooc#has_perception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/people/wawrzik/ooc#has_perception> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/people/wawrzik/ooc#perception_about> .
+<https://www.w3id.org/people/wawrzik/ooc#has_perception> <http://www.w3.org/2000/01/rdf-schema#label> "has perception" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of
+<https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of> <http://purl.obolibrary.org/obo/IAO_0000115> "used to indicate the influnce of a contextual factor to a content by reverse direction" .
+<https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of> <http://www.w3.org/2000/01/rdf-schema#label> "is defined by factor of" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#is_loc_of
+<https://www.w3id.org/people/wawrzik/ooc#is_loc_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/people/wawrzik/ooc#is_loc_of> <http://www.w3.org/2000/01/rdf-schema#label> "is loc of" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#perception_about
+<https://www.w3id.org/people/wawrzik/ooc#perception_about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/people/wawrzik/ooc#perception_about> <http://www.w3.org/2000/01/rdf-schema#label> "perception about" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#represents_degree_of
+<https://www.w3id.org/people/wawrzik/ooc#represents_degree_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/people/wawrzik/ooc#represents_degree_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://www.w3id.org/people/wawrzik/ooc#represents_degree_of> <http://www.w3.org/2000/01/rdf-schema#label> "represents degree of" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#object_of_truth> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#Buddha
+<https://www.w3id.org/people/wawrzik/ooc#Buddha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#Buddha> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#avatar> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#God
+<https://www.w3id.org/people/wawrzik/ooc#God> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#God> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#context> .
+<https://www.w3id.org/people/wawrzik/ooc#God> <http://purl.obolibrary.org/obo/IAO_0000115> "God is an infinite consciousness" .
+<https://www.w3id.org/people/wawrzik/ooc#God> <http://www.w3.org/2000/01/rdf-schema#label> "God" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#Jesus_Christ
+<https://www.w3id.org/people/wawrzik/ooc#Jesus_Christ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#Jesus_Christ> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#avatar> .
+<https://www.w3id.org/people/wawrzik/ooc#Jesus_Christ> <http://www.w3.org/2000/01/rdf-schema#label> "Jesus Christ" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#Krishna
+<https://www.w3id.org/people/wawrzik/ooc#Krishna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#Krishna> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#avatar> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#Self
+<https://www.w3id.org/people/wawrzik/ooc#Self> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#Self> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> .
+<https://www.w3id.org/people/wawrzik/ooc#Self> <http://www.w3.org/2000/01/rdf-schema#label> "Self" .
+<https://www.w3id.org/people/wawrzik/ooc#Self> <http://www.w3.org/2000/01/rdf-schema#label> "manifest as allness" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#Truth
+<https://www.w3id.org/people/wawrzik/ooc#Truth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#Truth> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/2001/XMLSchema#minInclusive> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#Truth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#Truth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2001/XMLSchema#minInclusive> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#Truth> <http://www.w3.org/2000/01/rdf-schema#label> "Truth" .
+<https://www.w3id.org/people/wawrzik/ooc#Truth> <http://www.w3.org/2000/01/rdf-schema#label> "integrity" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#acceptance
+<https://www.w3id.org/people/wawrzik/ooc#acceptance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#acceptance> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2001/XMLSchema#maxExclusive> "400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2001/XMLSchema#minInclusive> "350"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#acceptance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#acceptance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2001/XMLSchema#maxInclusive> "400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2001/XMLSchema#minInclusive> "350"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#anger
+<https://www.w3id.org/people/wawrzik/ooc#anger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#anger> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2001/XMLSchema#maxExclusive> "175"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2001/XMLSchema#minInclusive> "150"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#anger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#anger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2001/XMLSchema#maxExclusive> "175"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2001/XMLSchema#minInclusive> "150"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#apathy
+<https://www.w3id.org/people/wawrzik/ooc#apathy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#apathy> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2001/XMLSchema#maxExclusive> "75"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2001/XMLSchema#minInclusive> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#apathy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#apathy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/2001/XMLSchema#maxExclusive> "75"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2001/XMLSchema#minInclusive> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#avatar
+<https://www.w3id.org/people/wawrzik/ooc#avatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#avatar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#master> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#awakened
+<https://www.w3id.org/people/wawrzik/ooc#awakened> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#awakened> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#awakening
+<https://www.w3id.org/people/wawrzik/ooc#awakening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#awakening> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_experience> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#awareness
+<https://www.w3id.org/people/wawrzik/ooc#awareness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#awareness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#bhakti_yoga
+<https://www.w3id.org/people/wawrzik/ooc#bhakti_yoga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#bhakti_yoga> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#yoga> .
+<https://www.w3id.org/people/wawrzik/ooc#bhakti_yoga> <http://www.w3.org/2000/01/rdf-schema#label> "bhakti yoga" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#consciousness
+<https://www.w3id.org/people/wawrzik/ooc#consciousness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#consciousness> <http://purl.obolibrary.org/obo/IAO_0000115> "Consciousness is the irreducible stratum of all that exists" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#contemplation
+<https://www.w3id.org/people/wawrzik/ooc#contemplation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#contemplation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#content
+<https://www.w3id.org/people/wawrzik/ooc#content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#content> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#content> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/people/wawrzik/ooc#contextual_factor> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#content> <http://purl.obolibrary.org/obo/IAO_0000115> "Content is what we can perceive, see, believe, explain. Content is linear, definable." .
+<https://www.w3id.org/people/wawrzik/ooc#content> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=4ebSXU0-QcE" .
+<https://www.w3id.org/people/wawrzik/ooc#content> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=qMGYamjHwaI" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#context
+<https://www.w3id.org/people/wawrzik/ooc#context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#context> <http://purl.obolibrary.org/obo/IAO_0000115> "Context is what we cannot perceive, see, believe, explain. Context is non-linear, timeless and nonlocal (nondual) and not definable." .
+<https://www.w3id.org/people/wawrzik/ooc#context> <http://purl.obolibrary.org/obo/IAO_0000600> "For example the occurance of an event is preceded by another set of occuring events or \"surrounded by\" proximate events. In order for these events to happen requires in itself an infinite amount of events and contexts going back to the existence of the universe." .
+<https://www.w3id.org/people/wawrzik/ooc#context> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=4ebSXU0-QcE" .
+<https://www.w3id.org/people/wawrzik/ooc#context> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=qMGYamjHwaI" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#contextual_factor
+<https://www.w3id.org/people/wawrzik/ooc#contextual_factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#contextual_factor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#contextual_factor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/people/wawrzik/ooc#content> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/people/wawrzik/ooc#defining_factor_for> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#contextual_factor> <http://purl.obolibrary.org/obo/IAO_0000112> "location" .
+<https://www.w3id.org/people/wawrzik/ooc#contextual_factor> <http://purl.obolibrary.org/obo/IAO_0000112> "time" .
+<https://www.w3id.org/people/wawrzik/ooc#contextual_factor> <http://purl.obolibrary.org/obo/IAO_0000115> "The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood are contextual factors. Each contextual factor is an influence on the content under consideration." .
+<https://www.w3id.org/people/wawrzik/ooc#contextual_factor> <http://www.w3.org/2000/01/rdf-schema#label> "contextual factor" .
+<https://www.w3id.org/people/wawrzik/ooc#contextual_factor> <http://www.w3.org/2000/01/rdf-schema#label> "proximate field" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#courage
+<https://www.w3id.org/people/wawrzik/ooc#courage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#courage> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
+_:genid76 <http://www.w3.org/2001/XMLSchema#maxExclusive> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
+_:genid80 <http://www.w3.org/2001/XMLSchema#minInclusive> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#courage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#courage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/2001/XMLSchema#maxExclusive> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid88 .
+_:genid88 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid90 .
+_:genid90 <http://www.w3.org/2001/XMLSchema#minInclusive> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#desire
+<https://www.w3id.org/people/wawrzik/ooc#desire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#desire> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid91 .
+_:genid91 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid96 .
+_:genid96 <http://www.w3.org/2001/XMLSchema#maxExclusive> "150"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
+_:genid100 <http://www.w3.org/2001/XMLSchema#minInclusive> "125"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#desire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#desire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid104 .
+_:genid104 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid106 .
+_:genid106 <http://www.w3.org/2001/XMLSchema#maxExclusive> "150"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid108 .
+_:genid108 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid110 .
+_:genid110 <http://www.w3.org/2001/XMLSchema#minInclusive> "125"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#ecstasy
+<https://www.w3id.org/people/wawrzik/ooc#ecstasy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#ecstasy> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid111 .
+_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid112 .
+_:genid112 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid114 .
+_:genid114 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid116 .
+_:genid116 <http://www.w3.org/2001/XMLSchema#maxExclusive> "600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid118 .
+_:genid118 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid120 .
+_:genid120 <http://www.w3.org/2001/XMLSchema#minInclusive> "575"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#ecstasy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#love> .
+<https://www.w3id.org/people/wawrzik/ooc#ecstasy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+_:genid121 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid124 .
+_:genid124 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid126 .
+_:genid126 <http://www.w3.org/2001/XMLSchema#maxExclusive> "600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid128 .
+_:genid128 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid130 .
+_:genid130 <http://www.w3.org/2001/XMLSchema#minInclusive> "575"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#ecstatic_dance
+<https://www.w3id.org/people/wawrzik/ooc#ecstatic_dance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#ecstatic_dance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> .
+<https://www.w3id.org/people/wawrzik/ooc#ecstatic_dance> <http://www.w3.org/2000/01/rdf-schema#label> "ecstatic dance" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#ego
+<https://www.w3id.org/people/wawrzik/ooc#ego> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#ego> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#object_of_truth> .
+<https://www.w3id.org/people/wawrzik/ooc#ego> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
+_:genid131 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000050> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#ego> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
+_:genid132 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/people/wawrzik/ooc#perception> .
+_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/people/wawrzik/ooc#has_perception> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#ego> <http://www.w3.org/2000/01/rdf-schema#label> "ego" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#enlightenment
+<https://www.w3id.org/people/wawrzik/ooc#enlightenment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#enlightenment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_experience> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#excellence
+<https://www.w3id.org/people/wawrzik/ooc#excellence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#excellence> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid133 .
+_:genid133 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid134 .
+_:genid134 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid136 .
+_:genid136 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid138 .
+_:genid138 <http://www.w3.org/2001/XMLSchema#maxExclusive> "480"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid140 .
+_:genid140 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid142 .
+_:genid142 <http://www.w3.org/2001/XMLSchema#minInclusive> "460"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#excellence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#reason> .
+<https://www.w3id.org/people/wawrzik/ooc#excellence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
+_:genid143 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid144 .
+_:genid144 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid146 .
+_:genid146 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid148 .
+_:genid148 <http://www.w3.org/2001/XMLSchema#maxExclusive> "480"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid146 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid150 .
+_:genid150 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid152 .
+_:genid152 <http://www.w3.org/2001/XMLSchema#minInclusive> "460"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid150 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#falsehood
+<https://www.w3id.org/people/wawrzik/ooc#falsehood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#falsehood> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid153 .
+_:genid153 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid154 .
+_:genid154 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid156 .
+_:genid156 <http://www.w3.org/2001/XMLSchema#maxExclusive> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid154 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid153 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#falsehood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#falsehood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid157 .
+_:genid157 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid158 .
+_:genid158 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid159 .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid160 .
+_:genid160 <http://www.w3.org/2001/XMLSchema#maxExclusive> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid158 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid157 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#falsehood> <http://www.w3.org/2000/01/rdf-schema#label> "falsehood" .
+<https://www.w3id.org/people/wawrzik/ooc#falsehood> <http://www.w3.org/2000/01/rdf-schema#label> "non-integrity" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#fear
+<https://www.w3id.org/people/wawrzik/ooc#fear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#fear> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid161 .
+_:genid161 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid162 .
+_:genid162 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid164 .
+_:genid164 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid165 .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid166 .
+_:genid166 <http://www.w3.org/2001/XMLSchema#maxExclusive> "125"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid164 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid168 .
+_:genid168 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid169 .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid170 .
+_:genid170 <http://www.w3.org/2001/XMLSchema#minInclusive> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid168 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid161 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#fear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#fear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid171 .
+_:genid171 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid172 .
+_:genid172 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid173 .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid174 .
+_:genid174 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid175 .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid176 .
+_:genid176 <http://www.w3.org/2001/XMLSchema#maxExclusive> "125"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid174 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid178 .
+_:genid178 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid179 .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid180 .
+_:genid180 <http://www.w3.org/2001/XMLSchema#minInclusive> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid178 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid171 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#fields_of_realization
+<https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#object_of_truth> .
+<https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> <http://www.w3.org/2000/01/rdf-schema#label> "fields of realization" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#form
+<https://www.w3id.org/people/wawrzik/ooc#form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#form> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#genius
+<https://www.w3id.org/people/wawrzik/ooc#genius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#genius> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid181 .
+_:genid181 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid182 .
+_:genid182 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid187 .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid183 .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid184 .
+_:genid184 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid185 .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid186 .
+_:genid186 <http://www.w3.org/2001/XMLSchema#maxExclusive> "500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid184 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid188 .
+_:genid188 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid189 .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid190 .
+_:genid190 <http://www.w3.org/2001/XMLSchema#minInclusive> "480"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid188 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid181 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#genius> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#reason> .
+<https://www.w3id.org/people/wawrzik/ooc#genius> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid191 .
+_:genid191 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid192 .
+_:genid192 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid197 .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid193 .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid194 .
+_:genid194 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid195 .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid196 .
+_:genid196 <http://www.w3.org/2001/XMLSchema#maxExclusive> "500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid194 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid198 .
+_:genid198 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid199 .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid200 .
+_:genid200 <http://www.w3.org/2001/XMLSchema#minInclusive> "480"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid198 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid191 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#grief
+<https://www.w3id.org/people/wawrzik/ooc#grief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#grief> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid201 .
+_:genid201 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid202 .
+_:genid202 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid207 .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid203 .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid204 .
+_:genid204 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid205 .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid206 .
+_:genid206 <http://www.w3.org/2001/XMLSchema#maxExclusive> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid204 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid208 .
+_:genid208 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid209 .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid210 .
+_:genid210 <http://www.w3.org/2001/XMLSchema#minInclusive> "75"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid208 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid201 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#grief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#grief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid211 .
+_:genid211 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid212 .
+_:genid212 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid217 .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid213 .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid214 .
+_:genid214 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid215 .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid216 .
+_:genid216 <http://www.w3.org/2001/XMLSchema#maxExclusive> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid214 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid218 .
+_:genid218 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid219 .
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid220 .
+_:genid220 <http://www.w3.org/2001/XMLSchema#minInclusive> "75"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid218 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid211 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#guilt
+<https://www.w3id.org/people/wawrzik/ooc#guilt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#guilt> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid221 .
+_:genid221 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid222 .
+_:genid222 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid227 .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid223 .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid224 .
+_:genid224 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid225 .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid226 .
+_:genid226 <http://www.w3.org/2001/XMLSchema#maxExclusive> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid224 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid228 .
+_:genid228 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid229 .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid230 .
+_:genid230 <http://www.w3.org/2001/XMLSchema#minInclusive> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid228 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid221 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#guilt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#guilt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid231 .
+_:genid231 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid232 .
+_:genid232 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid237 .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid233 .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid234 .
+_:genid234 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid235 .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid236 .
+_:genid236 <http://www.w3.org/2001/XMLSchema#maxExclusive> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid234 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid238 .
+_:genid238 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid239 .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid240 .
+_:genid240 <http://www.w3.org/2001/XMLSchema#minInclusive> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid238 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid231 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#hatha_yoga
+<https://www.w3id.org/people/wawrzik/ooc#hatha_yoga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#hatha_yoga> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#yoga> .
+<https://www.w3id.org/people/wawrzik/ooc#hatha_yoga> <http://www.w3.org/2000/01/rdf-schema#label> "hatha yoga" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#keep_holy_company
+<https://www.w3id.org/people/wawrzik/ooc#keep_holy_company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#keep_holy_company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> .
+<https://www.w3id.org/people/wawrzik/ooc#keep_holy_company> <http://www.w3.org/2000/01/rdf-schema#label> "keep holy company" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#kriya_yoga
+<https://www.w3id.org/people/wawrzik/ooc#kriya_yoga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#kriya_yoga> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#yoga> .
+<https://www.w3id.org/people/wawrzik/ooc#kriya_yoga> <http://www.w3.org/2000/01/rdf-schema#label> "kriya yoga" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#kundalini_yoga
+<https://www.w3id.org/people/wawrzik/ooc#kundalini_yoga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#kundalini_yoga> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#yoga> .
+<https://www.w3id.org/people/wawrzik/ooc#kundalini_yoga> <http://www.w3.org/2000/01/rdf-schema#label> "kundalini yoga" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#letting_go
+<https://www.w3id.org/people/wawrzik/ooc#letting_go> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#letting_go> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> .
+<https://www.w3id.org/people/wawrzik/ooc#letting_go> <http://www.w3.org/2000/01/rdf-schema#label> "letting go" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#context> .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid241 .
+_:genid241 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/people/wawrzik/ooc#object_of_truth> .
+_:genid241 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/people/wawrzik/ooc#is_loc_of> .
+_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid242 .
+_:genid242 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid243 .
+_:genid243 <http://www.w3.org/2002/07/owl#unionOf> _:genid245 .
+_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid244 .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/people/wawrzik/ooc#ego> .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/people/wawrzik/ooc#God> .
+_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid242 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/people/wawrzik/ooc#represents_degree_of> .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://purl.obolibrary.org/obo/IAO_0000115> "A level of consciousness is a quantified logarithmic energy level gauged and calibrated according to the Map of Consciousness (MoC) by Dr. David R. Hawkins" .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://purl.obolibrary.org/obo/IAO_0000117> "calibration" .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://purl.obolibrary.org/obo/IAO_0000117> "level" .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://purl.obolibrary.org/obo/IAO_0000600> "Everything in the universe gives off / radiates an energy pattern that can be read throughout all time. Similar to radio waves these energy patterns can be measured. Something which is true, registers in consciousness (indicated by the level of Truth at 200). Something which is false (indicated by the level of falsehood below 200) does not register in consciousness. Accordingly, the level indicates the degree of the presence of Truth. This is comparable to a scale of temperature, where various degrees of heat can be measued." .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://www.w3.org/2000/01/rdf-schema#label> "essence" .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://www.w3.org/2000/01/rdf-schema#label> "level of consciousness" .
+<https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "Book \"Power vs. Force: The Hidden Determinants of Human Behaviour\" by David Hawkins" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#light_of_consciousness
+<https://www.w3id.org/people/wawrzik/ooc#light_of_consciousness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#light_of_consciousness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> .
+<https://www.w3id.org/people/wawrzik/ooc#light_of_consciousness> <http://www.w3.org/2000/01/rdf-schema#label> "light of consciousness" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#logic
+<https://www.w3id.org/people/wawrzik/ooc#logic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#logic> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid246 .
+_:genid246 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid247 .
+_:genid247 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid252 .
+_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid248 .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid249 .
+_:genid249 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid250 .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid251 .
+_:genid251 <http://www.w3.org/2001/XMLSchema#maxInclusive> "450"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid249 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid253 .
+_:genid253 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid254 .
+_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid255 .
+_:genid255 <http://www.w3.org/2001/XMLSchema#minInclusive> "450"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid253 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid246 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#logic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#reason> .
+<https://www.w3id.org/people/wawrzik/ooc#logic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid256 .
+_:genid256 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid257 .
+_:genid257 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid262 .
+_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid258 .
+_:genid258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid259 .
+_:genid259 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid260 .
+_:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid261 .
+_:genid261 <http://www.w3.org/2001/XMLSchema#maxInclusive> "450"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid259 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid259 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid263 .
+_:genid263 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid264 .
+_:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid265 .
+_:genid265 <http://www.w3.org/2001/XMLSchema#minInclusive> "450"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid263 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid256 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#love
+<https://www.w3id.org/people/wawrzik/ooc#love> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#love> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid266 .
+_:genid266 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid267 .
+_:genid267 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid272 .
+_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid268 .
+_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid269 .
+_:genid269 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid270 .
+_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid271 .
+_:genid271 <http://www.w3.org/2001/XMLSchema#maxExclusive> "600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid269 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid273 .
+_:genid273 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid274 .
+_:genid274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid275 .
+_:genid275 <http://www.w3.org/2001/XMLSchema#minInclusive> "500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid273 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid266 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#love> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#love> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid276 .
+_:genid276 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid277 .
+_:genid277 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid282 .
+_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid278 .
+_:genid278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid279 .
+_:genid279 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid280 .
+_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid281 .
+_:genid281 <http://www.w3.org/2001/XMLSchema#maxExclusive> "600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid279 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid283 .
+_:genid283 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid284 .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid285 .
+_:genid285 <http://www.w3.org/2001/XMLSchema#minInclusive> "500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid283 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid276 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#master
+<https://www.w3id.org/people/wawrzik/ooc#master> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#master> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#awakened> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#meditation
+<https://www.w3id.org/people/wawrzik/ooc#meditation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#meditation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#neutrality
+<https://www.w3id.org/people/wawrzik/ooc#neutrality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#neutrality> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid286 .
+_:genid286 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid287 .
+_:genid287 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid292 .
+_:genid292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid288 .
+_:genid288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid289 .
+_:genid289 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid290 .
+_:genid290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid291 .
+_:genid291 <http://www.w3.org/2001/XMLSchema#maxExclusive> "300"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid289 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid289 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid293 .
+_:genid293 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid294 .
+_:genid294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid295 .
+_:genid295 <http://www.w3.org/2001/XMLSchema#minInclusive> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid293 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid293 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid286 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#neutrality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#neutrality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid296 .
+_:genid296 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid297 .
+_:genid297 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid302 .
+_:genid302 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid298 .
+_:genid298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid299 .
+_:genid299 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid300 .
+_:genid300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid301 .
+_:genid301 <http://www.w3.org/2001/XMLSchema#maxExclusive> "300"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid299 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid299 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid302 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid303 .
+_:genid303 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid304 .
+_:genid304 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid304 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid305 .
+_:genid305 <http://www.w3.org/2001/XMLSchema#minInclusive> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid304 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid303 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid303 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid302 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid296 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid296 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#object_of_truth
+<https://www.w3id.org/people/wawrzik/ooc#object_of_truth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#object_of_truth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#content> .
+<https://www.w3id.org/people/wawrzik/ooc#object_of_truth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid306 .
+_:genid306 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+_:genid306 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/people/wawrzik/ooc#has_loc> .
+_:genid306 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#object_of_truth> <http://purl.obolibrary.org/obo/IAO_0000112> "E.g. a person, a book, a movie, an event, a treatment, a software program, an organization, a country or a statement" .
+<https://www.w3id.org/people/wawrzik/ooc#object_of_truth> <http://purl.obolibrary.org/obo/IAO_0000115> "An \"object of Truth\" is content (a non-contextual entity) that is defined by what the entity means or is and the context that defines the entity. An \"object of Truth\" is as content related to a contexttual factor or proximate field. But specfically characterized from all other entities (e.g. a bfo:entity) in that it is related to a level of consciousness." .
+<https://www.w3id.org/people/wawrzik/ooc#object_of_truth> <http://purl.obolibrary.org/obo/IAO_0000600> "The definition of an \"object of Truth\" empahzises that in this context the discernment of the objects essence is a primary factor in employing the term and the ontology." .
+<https://www.w3id.org/people/wawrzik/ooc#object_of_truth> <http://www.w3.org/2000/01/rdf-schema#label> "object of Truth" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#peace
+<https://www.w3id.org/people/wawrzik/ooc#peace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#peace> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid307 .
+_:genid307 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid308 .
+_:genid308 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid313 .
+_:genid313 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid309 .
+_:genid309 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid309 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid310 .
+_:genid310 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid311 .
+_:genid311 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid311 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid312 .
+_:genid312 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid311 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid310 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid310 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid309 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid313 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid314 .
+_:genid314 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid315 .
+_:genid315 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid315 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid316 .
+_:genid316 <http://www.w3.org/2001/XMLSchema#minInclusive> "600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid315 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid314 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid314 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid313 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid307 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid307 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#peace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#peace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid317 .
+_:genid317 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid318 .
+_:genid318 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid323 .
+_:genid323 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid319 .
+_:genid319 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid319 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid320 .
+_:genid320 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid321 .
+_:genid321 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid321 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid322 .
+_:genid322 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid321 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid320 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid320 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid319 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid323 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid324 .
+_:genid324 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid325 .
+_:genid325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid326 .
+_:genid326 <http://www.w3.org/2001/XMLSchema#minInclusive> "600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid324 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid324 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid323 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid318 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid317 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid317 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#peace> <http://www.w3.org/2000/01/rdf-schema#label> "enlightenment" .
+<https://www.w3id.org/people/wawrzik/ooc#peace> <http://www.w3.org/2000/01/rdf-schema#label> "peace" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#perception
+<https://www.w3id.org/people/wawrzik/ooc#perception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#perception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#object_of_truth> .
+<https://www.w3id.org/people/wawrzik/ooc#perception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid327 .
+_:genid327 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/people/wawrzik/ooc#content> .
+_:genid327 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/people/wawrzik/ooc#perception_about> .
+_:genid327 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#prayer
+<https://www.w3id.org/people/wawrzik/ooc#prayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#prayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#pride
+<https://www.w3id.org/people/wawrzik/ooc#pride> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#pride> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid328 .
+_:genid328 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid329 .
+_:genid329 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid334 .
+_:genid334 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid330 .
+_:genid330 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid330 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid331 .
+_:genid331 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid332 .
+_:genid332 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid332 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid333 .
+_:genid333 <http://www.w3.org/2001/XMLSchema#maxExclusive> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid332 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid331 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid331 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid330 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid334 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid335 .
+_:genid335 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid336 .
+_:genid336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid337 .
+_:genid337 <http://www.w3.org/2001/XMLSchema#minInclusive> "175"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid335 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid335 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid334 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid328 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid328 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#pride> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#pride> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid338 .
+_:genid338 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid339 .
+_:genid339 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid344 .
+_:genid344 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid340 .
+_:genid340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid341 .
+_:genid341 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid342 .
+_:genid342 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid342 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid343 .
+_:genid343 <http://www.w3.org/2001/XMLSchema#maxExclusive> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid342 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid341 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid344 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid345 .
+_:genid345 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid346 .
+_:genid346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid347 .
+_:genid347 <http://www.w3.org/2001/XMLSchema#minInclusive> "175"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid345 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid345 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid344 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid339 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid338 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#reason
+<https://www.w3id.org/people/wawrzik/ooc#reason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#reason> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid348 .
+_:genid348 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid349 .
+_:genid349 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid354 .
+_:genid354 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid350 .
+_:genid350 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid350 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid351 .
+_:genid351 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid352 .
+_:genid352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid353 .
+_:genid353 <http://www.w3.org/2001/XMLSchema#maxExclusive> "500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid351 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid351 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid350 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid354 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid355 .
+_:genid355 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid356 .
+_:genid356 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid356 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid357 .
+_:genid357 <http://www.w3.org/2001/XMLSchema#minInclusive> "400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid356 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid355 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid355 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid354 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid349 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid348 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid348 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#reason> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#reason> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid358 .
+_:genid358 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid359 .
+_:genid359 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid364 .
+_:genid364 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid360 .
+_:genid360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid361 .
+_:genid361 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid362 .
+_:genid362 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid362 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid363 .
+_:genid363 <http://www.w3.org/2001/XMLSchema#maxExclusive> "500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid362 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid361 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid361 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid364 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid365 .
+_:genid365 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid366 .
+_:genid366 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid366 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid367 .
+_:genid367 <http://www.w3.org/2001/XMLSchema#minInclusive> "400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid366 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid365 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid365 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid364 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid359 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid358 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid358 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#recognition
+<https://www.w3id.org/people/wawrzik/ooc#recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#recognition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#register
+<https://www.w3id.org/people/wawrzik/ooc#register> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#register> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#samadhi
+<https://www.w3id.org/people/wawrzik/ooc#samadhi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#samadhi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_experience> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#shame
+<https://www.w3id.org/people/wawrzik/ooc#shame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#shame> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid368 .
+_:genid368 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid369 .
+_:genid369 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid374 .
+_:genid374 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid370 .
+_:genid370 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid370 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid371 .
+_:genid371 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid372 .
+_:genid372 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid372 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid373 .
+_:genid373 <http://www.w3.org/2001/XMLSchema#maxExclusive> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid372 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid371 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid371 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid370 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid374 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid375 .
+_:genid375 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid376 .
+_:genid376 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid376 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid377 .
+_:genid377 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid376 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid375 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid375 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid374 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid369 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid368 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#shame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#shame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid378 .
+_:genid378 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid379 .
+_:genid379 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid384 .
+_:genid384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid380 .
+_:genid380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid381 .
+_:genid381 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid382 .
+_:genid382 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid382 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid383 .
+_:genid383 <http://www.w3.org/2001/XMLSchema#maxExclusive> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid382 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid381 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid385 .
+_:genid385 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid386 .
+_:genid386 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid386 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid387 .
+_:genid387 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid386 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid385 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid379 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid378 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid378 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#spiritual_experience
+<https://www.w3id.org/people/wawrzik/ooc#spiritual_experience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#spiritual_experience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#object_of_truth> .
+<https://www.w3id.org/people/wawrzik/ooc#spiritual_experience> <http://www.w3.org/2000/01/rdf-schema#label> "spiritual experience" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#spiritual_practice
+<https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#object_of_truth> .
+<https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> <http://www.w3.org/2000/01/rdf-schema#label> "spiritual practice" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#surrender
+<https://www.w3id.org/people/wawrzik/ooc#surrender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#surrender> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> .
+<https://www.w3id.org/people/wawrzik/ooc#surrender> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid388 .
+_:genid388 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/people/wawrzik/ooc#love> .
+_:genid388 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/people/wawrzik/ooc#has_loc> .
+_:genid388 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#unconditional_love
+<https://www.w3id.org/people/wawrzik/ooc#unconditional_love> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#unconditional_love> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid389 .
+_:genid389 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid390 .
+_:genid390 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid395 .
+_:genid395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid391 .
+_:genid391 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid391 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid392 .
+_:genid392 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid393 .
+_:genid393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid394 .
+_:genid394 <http://www.w3.org/2001/XMLSchema#maxExclusive> "575"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid392 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid392 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid391 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid396 .
+_:genid396 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid397 .
+_:genid397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid398 .
+_:genid398 <http://www.w3.org/2001/XMLSchema#minInclusive> "540"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid396 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid396 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid390 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid389 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid389 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#unconditional_love> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#love> .
+<https://www.w3id.org/people/wawrzik/ooc#unconditional_love> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid399 .
+_:genid399 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid400 .
+_:genid400 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid405 .
+_:genid405 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid401 .
+_:genid401 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid401 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid402 .
+_:genid402 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid403 .
+_:genid403 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid403 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid404 .
+_:genid404 <http://www.w3.org/2001/XMLSchema#maxExclusive> "575"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid403 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid402 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid402 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid401 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid405 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid406 .
+_:genid406 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid407 .
+_:genid407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid408 .
+_:genid408 <http://www.w3.org/2001/XMLSchema#minInclusive> "540"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid406 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid406 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid405 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid399 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#unconditional_love> <http://www.w3.org/2000/01/rdf-schema#label> "joy" .
+<https://www.w3id.org/people/wawrzik/ooc#unconditional_love> <http://www.w3.org/2000/01/rdf-schema#label> "unconditional love" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#unmanifest
+<https://www.w3id.org/people/wawrzik/ooc#unmanifest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#unmanifest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> .
+<https://www.w3id.org/people/wawrzik/ooc#unmanifest> <http://www.w3.org/2000/01/rdf-schema#label> "Godhead" .
+<https://www.w3id.org/people/wawrzik/ooc#unmanifest> <http://www.w3.org/2000/01/rdf-schema#label> "unmanifest" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#watcher
+<https://www.w3id.org/people/wawrzik/ooc#watcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#watcher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> .
+<https://www.w3id.org/people/wawrzik/ooc#watcher> <http://www.w3.org/2000/01/rdf-schema#label> "experiencer" .
+<https://www.w3id.org/people/wawrzik/ooc#watcher> <http://www.w3.org/2000/01/rdf-schema#label> "watcher" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#willingness
+<https://www.w3id.org/people/wawrzik/ooc#willingness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#willingness> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid409 .
+_:genid409 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid410 .
+_:genid410 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid415 .
+_:genid415 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid411 .
+_:genid411 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid411 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid412 .
+_:genid412 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid413 .
+_:genid413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid414 .
+_:genid414 <http://www.w3.org/2001/XMLSchema#maxExclusive> "350"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid412 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid411 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid415 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid416 .
+_:genid416 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid417 .
+_:genid417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid418 .
+_:genid418 <http://www.w3.org/2001/XMLSchema#minInclusive> "300"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid416 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid416 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid415 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid410 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid409 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3id.org/people/wawrzik/ooc#willingness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness> .
+<https://www.w3id.org/people/wawrzik/ooc#willingness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid419 .
+_:genid419 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid420 .
+_:genid420 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid425 .
+_:genid425 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid421 .
+_:genid421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid422 .
+_:genid422 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid423 .
+_:genid423 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid423 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid424 .
+_:genid424 <http://www.w3.org/2001/XMLSchema#maxExclusive> "350"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid423 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid422 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid425 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid426 .
+_:genid426 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid427 .
+_:genid427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid428 .
+_:genid428 <http://www.w3.org/2001/XMLSchema#minInclusive> "300"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid426 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid426 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid425 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid419 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#witness
+<https://www.w3id.org/people/wawrzik/ooc#witness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#witness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#fields_of_realization> .
+<https://www.w3id.org/people/wawrzik/ooc#witness> <http://www.w3.org/2000/01/rdf-schema#label> "observer" .
+<https://www.w3id.org/people/wawrzik/ooc#witness> <http://www.w3.org/2000/01/rdf-schema#label> "witness" .
+# 
+# https://www.w3id.org/people/wawrzik/ooc#yoga
+<https://www.w3id.org/people/wawrzik/ooc#yoga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/people/wawrzik/ooc#yoga> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/people/wawrzik/ooc#spiritual_practice> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://www.w3id.org/people/wawrzik/ooc#Baal
+<https://www.w3id.org/people/wawrzik/ooc#Baal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# Generated by the OWL API (version 5.1.18.2021-07-30T21:49:07Z) https://github.com/owlcs/owlapi/

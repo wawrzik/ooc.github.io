@@ -1,0 +1,1321 @@
+@prefix : <https://www.w3id.org/people/wawrzik/ooc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://www.w3id.org/people/wawrzik/ooc#> .
+
+<https://www.w3id.org/people/wawrzik/ooc> rdf:type owl:Ontology ;
+                                           owl:versionIRI <https://www.w3id.org/people/wawrzik/ooc/1.1.0> ;
+                                           <http://purl.org/dc/elements/1.1/description> "The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serces as a standard to desrcibe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies need to be incorporated by users, researchers, scientists or the general public." ;
+                                           <http://purl.org/dc/elements/1.1/language> "en" ;
+                                           <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0/" ;
+                                           <http://purl.org/dc/elements/1.1/title> "OWL Ontology of Consciousness" ;
+                                           <http://purl.org/dc/terms/created> "2024-08-21" ,
+                                                                              "OWL Ontology of Consciousness" ;
+                                           <http://purl.org/dc/terms/creator> "Frank Wawrzik" ;
+                                           rdfs:label "The OWL Ontology of Consciousness" ;
+                                           owl:versionInfo "1.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "example of usage" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "term editor" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000600
+<http://purl.obolibrary.org/obo/IAO_0000600> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "elucidation" .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+<http://purl.obolibrary.org/obo/BFO_0000050> rdf:type owl:ObjectProperty ;
+                                             rdfs:label "part of" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#defining_factor_for
+:defining_factor_for rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :is_defined_by_factor_of ;
+                     <http://purl.obolibrary.org/obo/IAO_0000115> "used to indicate the influnce of a contextual factor to a conent" ;
+                     rdfs:label "defining factor for" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#has_loc
+:has_loc rdf:type owl:ObjectProperty ;
+         owl:inverseOf :is_loc_of ;
+         rdfs:domain :object_of_truth ;
+         rdfs:range :level_of_consciousness ;
+         rdfs:label "has loc" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#has_perception
+:has_perception rdf:type owl:ObjectProperty ;
+                owl:inverseOf :perception_about ;
+                rdfs:label "has perception" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of
+:is_defined_by_factor_of rdf:type owl:ObjectProperty ;
+                         <http://purl.obolibrary.org/obo/IAO_0000115> "used to indicate the influnce of a contextual factor to a content by reverse direction" ;
+                         rdfs:label "is defined by factor of" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#is_loc_of
+:is_loc_of rdf:type owl:ObjectProperty ;
+           rdfs:label "is loc of" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#perception_about
+:perception_about rdf:type owl:ObjectProperty ;
+                  rdfs:label "perception about" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#represents_degree_of
+:represents_degree_of rdf:type owl:ObjectProperty ,
+                               owl:SymmetricProperty ;
+                      rdfs:label "represents degree of" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  rdfs:subClassOf :object_of_truth .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#Buddha
+:Buddha rdf:type owl:Class ;
+        rdfs:subClassOf :avatar .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#God
+:God rdf:type owl:Class ;
+     rdfs:subClassOf :context ;
+     <http://purl.obolibrary.org/obo/IAO_0000115> "God is an infinite consciousness" ;
+     rdfs:label "God" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#Jesus_Christ
+:Jesus_Christ rdf:type owl:Class ;
+              rdfs:subClassOf :avatar ;
+              rdfs:label "Jesus Christ" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#Krishna
+:Krishna rdf:type owl:Class ;
+         rdfs:subClassOf :avatar .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#Self
+:Self rdf:type owl:Class ;
+      rdfs:subClassOf :fields_of_realization ;
+      rdfs:label "Self" ,
+                 "manifest as allness" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#Truth
+:Truth rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:onDatatype xsd:integer ;
+                                                  owl:withRestrictions ( [ xsd:minInclusive 200
+                                                                         ]
+                                                                       )
+                                                ]
+                           ] ;
+       rdfs:subClassOf :level_of_consciousness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                             owl:onDatatype xsd:integer ;
+                                             owl:withRestrictions ( [ xsd:minInclusive 200
+                                                                    ]
+                                                                  )
+                                           ]
+                       ] ;
+       rdfs:label "Truth" ,
+                  "integrity" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#acceptance
+:acceptance rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                       owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                              owl:onDatatype xsd:integer ;
+                                                                              owl:withRestrictions ( [ xsd:minInclusive 350
+                                                                                                     ]
+                                                                                                   )
+                                                                            ]
+                                                                            [ rdf:type rdfs:Datatype ;
+                                                                              owl:onDatatype xsd:integer ;
+                                                                              owl:withRestrictions ( [ xsd:maxExclusive 400
+                                                                                                     ]
+                                                                                                   )
+                                                                            ]
+                                                                          )
+                                                     ]
+                                ] ;
+            rdfs:subClassOf :level_of_consciousness ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                              owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 350
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxInclusive 400
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                            ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#anger
+:anger rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 150
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxExclusive 175
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                           ] ;
+       rdfs:subClassOf :level_of_consciousness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:minInclusive 150
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                                                   [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:maxExclusive 175
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                                                 )
+                                            ]
+                       ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#apathy
+:apathy rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                   owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:minInclusive 50
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                        [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:maxExclusive 75
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                      )
+                                                 ]
+                            ] ;
+        rdfs:subClassOf :level_of_consciousness ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                      owl:onDatatype xsd:integer ;
+                                                                      owl:withRestrictions ( [ xsd:minInclusive 50
+                                                                                             ]
+                                                                                           )
+                                                                    ]
+                                                                    [ rdf:type rdfs:Datatype ;
+                                                                      owl:onDatatype xsd:integer ;
+                                                                      owl:withRestrictions ( [ xsd:maxExclusive 75
+                                                                                             ]
+                                                                                           )
+                                                                    ]
+                                                                  )
+                                             ]
+                        ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#avatar
+:avatar rdf:type owl:Class ;
+        rdfs:subClassOf :master .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#awakened
+:awakened rdf:type owl:Class ;
+          rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#awakening
+:awakening rdf:type owl:Class ;
+           rdfs:subClassOf :spiritual_experience .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#awareness
+:awareness rdf:type owl:Class ;
+           rdfs:subClassOf :fields_of_realization .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#bhakti_yoga
+:bhakti_yoga rdf:type owl:Class ;
+             rdfs:subClassOf :yoga ;
+             rdfs:label "bhakti yoga" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#consciousness
+:consciousness rdf:type owl:Class ;
+               <http://purl.obolibrary.org/obo/IAO_0000115> "Consciousness is the irreducible stratum of all that exists" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#contemplation
+:contemplation rdf:type owl:Class ;
+               rdfs:subClassOf :spiritual_practice .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#content
+:content rdf:type owl:Class ;
+         rdfs:subClassOf :consciousness ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :is_defined_by_factor_of ;
+                           owl:someValuesFrom :contextual_factor
+                         ] ;
+         <http://purl.obolibrary.org/obo/IAO_0000115> "Content is what we can perceive, see, believe, explain. Content is linear, definable." ;
+         rdfs:seeAlso "https://www.youtube.com/watch?v=4ebSXU0-QcE" ,
+                      "https://www.youtube.com/watch?v=qMGYamjHwaI" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#context
+:context rdf:type owl:Class ;
+         rdfs:subClassOf :consciousness ;
+         <http://purl.obolibrary.org/obo/IAO_0000115> "Context is what we cannot perceive, see, believe, explain. Context is non-linear, timeless and nonlocal (nondual) and not definable." ;
+         <http://purl.obolibrary.org/obo/IAO_0000600> "For example the occurance of an event is preceded by another set of occuring events or \"surrounded by\" proximate events. In order for these events to happen requires in itself an infinite amount of events and contexts going back to the existence of the universe." ;
+         rdfs:seeAlso "https://www.youtube.com/watch?v=4ebSXU0-QcE" ,
+                      "https://www.youtube.com/watch?v=qMGYamjHwaI" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#contextual_factor
+:contextual_factor rdf:type owl:Class ;
+                   rdfs:subClassOf :consciousness ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :defining_factor_for ;
+                                     owl:someValuesFrom :content
+                                   ] ;
+                   <http://purl.obolibrary.org/obo/IAO_0000112> "location" ,
+                                                                "time" ;
+                   <http://purl.obolibrary.org/obo/IAO_0000115> "The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood are contextual factors. Each contextual factor is an influence on the content under consideration." ;
+                   rdfs:label "contextual factor" ,
+                              "proximate field" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#courage
+:courage rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                    owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                           owl:onDatatype xsd:integer ;
+                                                                           owl:withRestrictions ( [ xsd:minInclusive 200
+                                                                                                  ]
+                                                                                                )
+                                                                         ]
+                                                                         [ rdf:type rdfs:Datatype ;
+                                                                           owl:onDatatype xsd:integer ;
+                                                                           owl:withRestrictions ( [ xsd:maxExclusive 250
+                                                                                                  ]
+                                                                                                )
+                                                                         ]
+                                                                       )
+                                                  ]
+                             ] ;
+         rdfs:subClassOf :level_of_consciousness ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                           owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                      owl:onDatatype xsd:integer ;
+                                                                      owl:withRestrictions ( [ xsd:minInclusive 200
+                                                                                             ]
+                                                                                           )
+                                                                    ]
+                                                                    [ rdf:type rdfs:Datatype ;
+                                                                      owl:onDatatype xsd:integer ;
+                                                                      owl:withRestrictions ( [ xsd:maxExclusive 250
+                                                                                             ]
+                                                                                           )
+                                                                    ]
+                                                                  )
+                                             ]
+                         ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#desire
+:desire rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                   owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:minInclusive 125
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                        [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:maxExclusive 150
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                      )
+                                                 ]
+                            ] ;
+        rdfs:subClassOf :level_of_consciousness ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                          owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:minInclusive 125
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                                                   [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:maxExclusive 150
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                                                 )
+                                            ]
+                        ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#ecstasy
+:ecstasy rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                    owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                           owl:onDatatype xsd:integer ;
+                                                                           owl:withRestrictions ( [ xsd:minInclusive 575
+                                                                                                  ]
+                                                                                                )
+                                                                         ]
+                                                                         [ rdf:type rdfs:Datatype ;
+                                                                           owl:onDatatype xsd:integer ;
+                                                                           owl:withRestrictions ( [ xsd:maxExclusive 600
+                                                                                                  ]
+                                                                                                )
+                                                                         ]
+                                                                       )
+                                                  ]
+                             ] ;
+         rdfs:subClassOf :love ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                           owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                      owl:onDatatype xsd:integer ;
+                                                                      owl:withRestrictions ( [ xsd:minInclusive 575
+                                                                                             ]
+                                                                                           )
+                                                                    ]
+                                                                    [ rdf:type rdfs:Datatype ;
+                                                                      owl:onDatatype xsd:integer ;
+                                                                      owl:withRestrictions ( [ xsd:maxExclusive 600
+                                                                                             ]
+                                                                                           )
+                                                                    ]
+                                                                  )
+                                             ]
+                         ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#ecstatic_dance
+:ecstatic_dance rdf:type owl:Class ;
+                rdfs:subClassOf :spiritual_practice ;
+                rdfs:label "ecstatic dance" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#ego
+:ego rdf:type owl:Class ;
+     rdfs:subClassOf :object_of_truth ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                       owl:someValuesFrom <http://xmlns.com/foaf/0.1/Person>
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :has_perception ;
+                       owl:someValuesFrom :perception
+                     ] ;
+     rdfs:label "ego" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#enlightenment
+:enlightenment rdf:type owl:Class ;
+               rdfs:subClassOf :spiritual_experience .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#excellence
+:excellence rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                       owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                              owl:onDatatype xsd:integer ;
+                                                                              owl:withRestrictions ( [ xsd:minInclusive 460
+                                                                                                     ]
+                                                                                                   )
+                                                                            ]
+                                                                            [ rdf:type rdfs:Datatype ;
+                                                                              owl:onDatatype xsd:integer ;
+                                                                              owl:withRestrictions ( [ xsd:maxExclusive 480
+                                                                                                     ]
+                                                                                                   )
+                                                                            ]
+                                                                          )
+                                                     ]
+                                ] ;
+            rdfs:subClassOf :reason ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                              owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 460
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxExclusive 480
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                            ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#falsehood
+:falsehood rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                                 owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                      owl:onDatatype xsd:integer ;
+                                                      owl:withRestrictions ( [ xsd:maxExclusive 200
+                                                                             ]
+                                                                           )
+                                                    ]
+                               ] ;
+           rdfs:subClassOf :level_of_consciousness ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                 owl:onDatatype xsd:integer ;
+                                                 owl:withRestrictions ( [ xsd:maxExclusive 200
+                                                                        ]
+                                                                      )
+                                               ]
+                           ] ;
+           rdfs:label "falsehood" ,
+                      "non-integrity" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#fear
+:fear rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                        owl:onDatatype xsd:integer ;
+                                                                        owl:withRestrictions ( [ xsd:minInclusive 100
+                                                                                               ]
+                                                                                             )
+                                                                      ]
+                                                                      [ rdf:type rdfs:Datatype ;
+                                                                        owl:onDatatype xsd:integer ;
+                                                                        owl:withRestrictions ( [ xsd:maxExclusive 125
+                                                                                               ]
+                                                                                             )
+                                                                      ]
+                                                                    )
+                                               ]
+                          ] ;
+      rdfs:subClassOf :level_of_consciousness ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                        owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                            owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                   owl:onDatatype xsd:integer ;
+                                                                   owl:withRestrictions ( [ xsd:minInclusive 100
+                                                                                          ]
+                                                                                        )
+                                                                 ]
+                                                                 [ rdf:type rdfs:Datatype ;
+                                                                   owl:onDatatype xsd:integer ;
+                                                                   owl:withRestrictions ( [ xsd:maxExclusive 125
+                                                                                          ]
+                                                                                        )
+                                                                 ]
+                                                               )
+                                          ]
+                      ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#fields_of_realization
+:fields_of_realization rdf:type owl:Class ;
+                       rdfs:subClassOf :object_of_truth ;
+                       rdfs:label "fields of realization" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#form
+:form rdf:type owl:Class ;
+      rdfs:subClassOf :fields_of_realization .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#genius
+:genius rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                   owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:minInclusive 480
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                        [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:maxExclusive 500
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                      )
+                                                 ]
+                            ] ;
+        rdfs:subClassOf :reason ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                          owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:minInclusive 480
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                                                   [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:maxExclusive 500
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                                                 )
+                                            ]
+                        ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#grief
+:grief rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 75
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxExclusive 100
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                           ] ;
+       rdfs:subClassOf :level_of_consciousness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                             owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:minInclusive 75
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                  [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:maxExclusive 100
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                )
+                                           ]
+                       ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#guilt
+:guilt rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 30
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxExclusive 50
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                           ] ;
+       rdfs:subClassOf :level_of_consciousness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                             owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:minInclusive 30
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                  [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:maxExclusive 50
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                )
+                                           ]
+                       ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#hatha_yoga
+:hatha_yoga rdf:type owl:Class ;
+            rdfs:subClassOf :yoga ;
+            rdfs:label "hatha yoga" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#keep_holy_company
+:keep_holy_company rdf:type owl:Class ;
+                   rdfs:subClassOf :spiritual_practice ;
+                   rdfs:label "keep holy company" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#kriya_yoga
+:kriya_yoga rdf:type owl:Class ;
+            rdfs:subClassOf :yoga ;
+            rdfs:label "kriya yoga" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#kundalini_yoga
+:kundalini_yoga rdf:type owl:Class ;
+                rdfs:subClassOf :yoga ;
+                rdfs:label "kundalini yoga" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#letting_go
+:letting_go rdf:type owl:Class ;
+            rdfs:subClassOf :spiritual_practice ;
+            rdfs:label "letting go" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness
+:level_of_consciousness rdf:type owl:Class ;
+                        rdfs:subClassOf :context ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :is_loc_of ;
+                                          owl:someValuesFrom :object_of_truth
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :represents_degree_of ;
+                                          owl:someValuesFrom [ rdf:type owl:Class ;
+                                                               owl:unionOf ( :God
+                                                                             :ego
+                                                                           )
+                                                             ]
+                                        ] ;
+                        <http://purl.obolibrary.org/obo/IAO_0000115> "A level of consciousness is a quantified logarithmic energy level gauged and calibrated according to the Map of Consciousness (MoC) by Dr. David R. Hawkins" ;
+                        <http://purl.obolibrary.org/obo/IAO_0000117> "calibration" ,
+                                                                     "level" ;
+                        <http://purl.obolibrary.org/obo/IAO_0000600> "Everything in the universe gives off / radiates an energy pattern that can be read throughout all time. Similar to radio waves these energy patterns can be measured. Something which is true, registers in consciousness (indicated by the level of Truth at 200). Something which is false (indicated by the level of falsehood below 200) does not register in consciousness. Accordingly, the level indicates the degree of the presence of Truth. This is comparable to a scale of temperature, where various degrees of heat can be measued." ;
+                        rdfs:label "essence" ,
+                                   "level of consciousness" ;
+                        rdfs:seeAlso "Book \"Power vs. Force: The Hidden Determinants of Human Behaviour\" by David Hawkins" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#light_of_consciousness
+:light_of_consciousness rdf:type owl:Class ;
+                        rdfs:subClassOf :fields_of_realization ;
+                        rdfs:label "light of consciousness" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#logic
+:logic rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 450
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxInclusive 450
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                           ] ;
+       rdfs:subClassOf :reason ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                             owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:minInclusive 450
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                  [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:maxInclusive 450
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                )
+                                           ]
+                       ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#love
+:love rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                 owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                        owl:onDatatype xsd:integer ;
+                                                                        owl:withRestrictions ( [ xsd:minInclusive 500
+                                                                                               ]
+                                                                                             )
+                                                                      ]
+                                                                      [ rdf:type rdfs:Datatype ;
+                                                                        owl:onDatatype xsd:integer ;
+                                                                        owl:withRestrictions ( [ xsd:maxExclusive 600
+                                                                                               ]
+                                                                                             )
+                                                                      ]
+                                                                    )
+                                               ]
+                          ] ;
+      rdfs:subClassOf :level_of_consciousness ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                        owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                            owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                   owl:onDatatype xsd:integer ;
+                                                                   owl:withRestrictions ( [ xsd:minInclusive 500
+                                                                                          ]
+                                                                                        )
+                                                                 ]
+                                                                 [ rdf:type rdfs:Datatype ;
+                                                                   owl:onDatatype xsd:integer ;
+                                                                   owl:withRestrictions ( [ xsd:maxExclusive 600
+                                                                                          ]
+                                                                                        )
+                                                                 ]
+                                                               )
+                                          ]
+                      ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#master
+:master rdf:type owl:Class ;
+        rdfs:subClassOf :awakened .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#meditation
+:meditation rdf:type owl:Class ;
+            rdfs:subClassOf :spiritual_practice .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#neutrality
+:neutrality rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                       owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                              owl:onDatatype xsd:integer ;
+                                                                              owl:withRestrictions ( [ xsd:minInclusive 250
+                                                                                                     ]
+                                                                                                   )
+                                                                            ]
+                                                                            [ rdf:type rdfs:Datatype ;
+                                                                              owl:onDatatype xsd:integer ;
+                                                                              owl:withRestrictions ( [ xsd:maxExclusive 300
+                                                                                                     ]
+                                                                                                   )
+                                                                            ]
+                                                                          )
+                                                     ]
+                                ] ;
+            rdfs:subClassOf :level_of_consciousness ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                              owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 250
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxExclusive 300
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                            ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#object_of_truth
+:object_of_truth rdf:type owl:Class ;
+                 rdfs:subClassOf :content ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :has_loc ;
+                                   owl:someValuesFrom :level_of_consciousness
+                                 ] ;
+                 <http://purl.obolibrary.org/obo/IAO_0000112> "E.g. a person, a book, a movie, an event, a treatment, a software program, an organization, a country or a statement" ;
+                 <http://purl.obolibrary.org/obo/IAO_0000115> "An \"object of Truth\" is content (a non-contextual entity) that is defined by what the entity means or is and the context that defines the entity. An \"object of Truth\" is as content related to a contexttual factor or proximate field. But specfically characterized from all other entities (e.g. a bfo:entity) in that it is related to a level of consciousness." ;
+                 <http://purl.obolibrary.org/obo/IAO_0000600> "The definition of an \"object of Truth\" empahzises that in this context the discernment of the objects essence is a primary factor in employing the term and the ontology." ;
+                 rdfs:label "object of Truth" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#peace
+:peace rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 600
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxInclusive 1000
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                           ] ;
+       rdfs:subClassOf :level_of_consciousness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                             owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:minInclusive 600
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                  [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:maxInclusive 1000
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                )
+                                           ]
+                       ] ;
+       rdfs:label "enlightenment" ,
+                  "peace" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#perception
+:perception rdf:type owl:Class ;
+            rdfs:subClassOf :object_of_truth ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :perception_about ;
+                              owl:someValuesFrom :content
+                            ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#prayer
+:prayer rdf:type owl:Class ;
+        rdfs:subClassOf :spiritual_practice .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#pride
+:pride rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 175
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxExclusive 200
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                           ] ;
+       rdfs:subClassOf :level_of_consciousness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                             owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:minInclusive 175
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                  [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:maxExclusive 200
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                )
+                                           ]
+                       ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#reason
+:reason rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                   owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:minInclusive 400
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                        [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:maxExclusive 500
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                      )
+                                                 ]
+                            ] ;
+        rdfs:subClassOf :level_of_consciousness ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                          owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:minInclusive 400
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                                                   [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:maxExclusive 500
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                                                 )
+                                            ]
+                        ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#recognition
+:recognition rdf:type owl:Class ;
+             rdfs:subClassOf :fields_of_realization .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#register
+:register rdf:type owl:Class ;
+          rdfs:subClassOf :fields_of_realization .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#samadhi
+:samadhi rdf:type owl:Class ;
+         rdfs:subClassOf :spiritual_experience .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#shame
+:shame rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                       [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:maxExclusive 30
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                                     )
+                                                ]
+                           ] ;
+       rdfs:subClassOf :level_of_consciousness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                             owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                  [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:maxExclusive 30
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                                                )
+                                           ]
+                       ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#spiritual_experience
+:spiritual_experience rdf:type owl:Class ;
+                      rdfs:subClassOf :object_of_truth ;
+                      rdfs:label "spiritual experience" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#spiritual_practice
+:spiritual_practice rdf:type owl:Class ;
+                    rdfs:subClassOf :object_of_truth ;
+                    rdfs:label "spiritual practice" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#surrender
+:surrender rdf:type owl:Class ;
+           rdfs:subClassOf :spiritual_practice ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :has_loc ;
+                             owl:someValuesFrom :love
+                           ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#unconditional_love
+:unconditional_love rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                               owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                      owl:onDatatype xsd:integer ;
+                                                                                      owl:withRestrictions ( [ xsd:minInclusive 540
+                                                                                                             ]
+                                                                                                           )
+                                                                                    ]
+                                                                                    [ rdf:type rdfs:Datatype ;
+                                                                                      owl:onDatatype xsd:integer ;
+                                                                                      owl:withRestrictions ( [ xsd:maxExclusive 575
+                                                                                                             ]
+                                                                                                           )
+                                                                                    ]
+                                                                                  )
+                                                             ]
+                                        ] ;
+                    rdfs:subClassOf :love ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                                      owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                          owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                 owl:onDatatype xsd:integer ;
+                                                                                 owl:withRestrictions ( [ xsd:minInclusive 540
+                                                                                                        ]
+                                                                                                      )
+                                                                               ]
+                                                                               [ rdf:type rdfs:Datatype ;
+                                                                                 owl:onDatatype xsd:integer ;
+                                                                                 owl:withRestrictions ( [ xsd:maxExclusive 575
+                                                                                                        ]
+                                                                                                      )
+                                                                               ]
+                                                                             )
+                                                        ]
+                                    ] ;
+                    rdfs:label "joy" ,
+                               "unconditional love" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#unmanifest
+:unmanifest rdf:type owl:Class ;
+            rdfs:subClassOf :fields_of_realization ;
+            rdfs:label "Godhead" ,
+                       "unmanifest" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#watcher
+:watcher rdf:type owl:Class ;
+         rdfs:subClassOf :fields_of_realization ;
+         rdfs:label "experiencer" ,
+                    "watcher" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#willingness
+:willingness rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                        owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                               owl:onDatatype xsd:integer ;
+                                                                               owl:withRestrictions ( [ xsd:minInclusive 300
+                                                                                                      ]
+                                                                                                    )
+                                                                             ]
+                                                                             [ rdf:type rdfs:Datatype ;
+                                                                               owl:onDatatype xsd:integer ;
+                                                                               owl:withRestrictions ( [ xsd:maxExclusive 350
+                                                                                                      ]
+                                                                                                    )
+                                                                             ]
+                                                                           )
+                                                      ]
+                                 ] ;
+             rdfs:subClassOf :level_of_consciousness ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                               owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                   owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:minInclusive 300
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                        [ rdf:type rdfs:Datatype ;
+                                                                          owl:onDatatype xsd:integer ;
+                                                                          owl:withRestrictions ( [ xsd:maxExclusive 350
+                                                                                                 ]
+                                                                                               )
+                                                                        ]
+                                                                      )
+                                                 ]
+                             ] .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#witness
+:witness rdf:type owl:Class ;
+         rdfs:subClassOf :fields_of_realization ;
+         rdfs:label "observer" ,
+                    "witness" .
+
+
+###  https://www.w3id.org/people/wawrzik/ooc#yoga
+:yoga rdf:type owl:Class ;
+      rdfs:subClassOf :spiritual_practice .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.w3id.org/people/wawrzik/ooc#Baal
+:Baal rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 5.1.18.2021-07-30T21:49:07Z) https://github.com/owlcs/owlapi/
