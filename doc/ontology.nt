@@ -1,6 +1,6 @@
 <https://www.w3id.org/people/wawrzik/ooc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://www.w3id.org/people/wawrzik/ooc> <http://www.w3.org/2002/07/owl#versionIRI> <https://www.w3id.org/people/wawrzik/ooc/1.1.0> .
-<https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/elements/1.1/description> "The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serces as a standard to desrcibe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies need to be incorporated by users, researchers, scientists or the general public." .
+<https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/elements/1.1/description> "The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serves as a standard to describe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies need to be incorporated by users, researchers, scientists or the general public." .
 <https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/elements/1.1/language> "en" .
 <https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0/" .
 <https://www.w3id.org/people/wawrzik/ooc> <http://purl.org/dc/elements/1.1/title> "OWL Ontology of Consciousness" .

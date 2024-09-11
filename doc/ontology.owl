@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://www.w3id.org/people/wawrzik/ooc">
         <owl:versionIRI rdf:resource="https://www.w3id.org/people/wawrzik/ooc/1.1.0"/>
-        <dc:description>The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serces as a standard to desrcibe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies need to be incorporated by users, researchers, scientists or the general public.</dc:description>
+        <dc:description>The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serves as a standard to describe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies need to be incorporated by users, researchers, scientists or the general public.</dc:description>
         <dc:language>en</dc:language>
         <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
         <dc:title>OWL Ontology of Consciousness</dc:title>

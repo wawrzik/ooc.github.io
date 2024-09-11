@@ -2380,7 +2380,7 @@
   "@id" : "https://www.w3id.org/people/wawrzik/ooc",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serces as a standard to desrcibe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies need to be incorporated by users, researchers, scientists or the general public."
+    "@value" : "The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serves as a standard to describe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies need to be incorporated by users, researchers, scientists or the general public."
   } ],
   "http://purl.org/dc/elements/1.1/language" : [ {
     "@value" : "en"
