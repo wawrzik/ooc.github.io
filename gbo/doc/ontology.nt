@@ -1,0 +1,811 @@
+<http://w3id.org/gbo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/gbo> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/gbo/0.2.4> .
+<http://w3id.org/gbo> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> .
+<http://w3id.org/gbo> <http://purl.org/dc/elements/1.1/description> "Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL!. It supports the modelling of microlectronic components like sensors, acutators, processors and software along the automotive value chain." .
+<http://w3id.org/gbo> <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/gbo> <http://purl.org/dc/elements/1.1/title> "GENIAL! Basic Ontology" .
+<http://w3id.org/gbo> <http://purl.org/dc/terms/contributor> "Christoph Grimm" .
+<http://w3id.org/gbo> <http://purl.org/dc/terms/contributor> "Peter Neumann" .
+<http://w3id.org/gbo> <http://purl.org/dc/terms/created> "2024-09-12" .
+<http://w3id.org/gbo> <http://purl.org/dc/terms/creator> "Frank Wawrzik" .
+<http://w3id.org/gbo> <http://purl.org/dc/terms/title> "GENIAL! Basic Ontology" .
+<http://w3id.org/gbo> <http://www.w3.org/2000/01/rdf-schema#label> "GENIAL! Basic Ontology" .
+<http://w3id.org/gbo> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.4" .
+<http://w3id.org/gbo> <http://xmlns.com/foaf/0.1/homepage> "https://cps.cs.uni-kl.de/mitarbeiter/frank-wawrzik-msc" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/gbo#atTime
+<http://w3id.org/gbo#atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://w3id.org/gbo#atTime> <http://purl.obolibrary.org/obo/IAO_0000112> "e.g. law_for_banning_combustion_engines bans combustion engine atTime 2030-10-26T21:32:52 (xsd:DateTime)" .
+<http://w3id.org/gbo#atTime> <http://www.w3.org/2000/01/rdf-schema#comment> "used to annotate triples" .
+<http://w3id.org/gbo#atTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://w3id.org/gbo#hasAPPELFormula
+<http://w3id.org/gbo#hasAPPELFormula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/gbo#comprised_of
+<http://w3id.org/gbo#comprised_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/gbo#depends_on
+<http://w3id.org/gbo#depends_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#depends_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://w3id.org/gbo#depends_on> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gbo#property> .
+<http://w3id.org/gbo#depends_on> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gbo#dependency> .
+<http://w3id.org/gbo#depends_on> <http://purl.obolibrary.org/obo/IAO_0000115> "Links properties with dependencies." .
+# 
+# http://w3id.org/gbo#executes
+<http://w3id.org/gbo#executes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#executes> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/gbo#is_executed_by> .
+<http://w3id.org/gbo#executes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gbo#processing_element> .
+<http://w3id.org/gbo#executes> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gbo#software_element> .
+<http://w3id.org/gbo#executes> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a processing unit to the software which runs on it" .
+# 
+# http://w3id.org/gbo#has_part
+<http://w3id.org/gbo#has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#has_part> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/gbo#part_of> .
+<http://w3id.org/gbo#has_part> <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
+# 
+# http://w3id.org/gbo#has_part_directly
+<http://w3id.org/gbo#has_part_directly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#has_part_directly> <http://www.w3.org/2000/01/rdf-schema#comment> "models hierarchical de-composition/integration of direct parts" .
+# 
+# http://w3id.org/gbo#has_property
+<http://w3id.org/gbo#has_property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#has_property> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/gbo#property_of> .
+<http://w3id.org/gbo#has_property> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gbo#element> .
+<http://w3id.org/gbo#has_property> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gbo#property> .
+<http://w3id.org/gbo#has_property> <http://purl.obolibrary.org/obo/IAO_0000115> "links elements to their properties" .
+# 
+# http://w3id.org/gbo#implements
+<http://w3id.org/gbo#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#implements> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/gbo#is_implemented_by> .
+<http://w3id.org/gbo#implements> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gbo#element> .
+<http://w3id.org/gbo#implements> <http://www.w3.org/2000/01/rdf-schema#comment> "Links elements their functions" .
+# 
+# http://w3id.org/gbo#is_executed_by
+<http://w3id.org/gbo#is_executed_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#is_executed_by> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gbo#software_element> .
+<http://w3id.org/gbo#is_executed_by> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gbo#processing_element> .
+<http://w3id.org/gbo#is_executed_by> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the software to the processing unit on which it runs" .
+# 
+# http://w3id.org/gbo#is_implemented_by
+<http://w3id.org/gbo#is_implemented_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#is_implemented_by> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gbo#function> .
+<http://w3id.org/gbo#is_implemented_by> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/gbo#element> .
+<http://w3id.org/gbo#is_implemented_by> <http://www.w3.org/2000/01/rdf-schema#comment> "Links functions to their elements" .
+# 
+# http://w3id.org/gbo#part_of
+<http://w3id.org/gbo#part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#part_of> <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
+# 
+# http://w3id.org/gbo#part_of_directly
+<http://w3id.org/gbo#part_of_directly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#part_of_directly> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/gbo#part_of> .
+# 
+# http://w3id.org/gbo#property_of
+<http://w3id.org/gbo#property_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/gbo#property_of> <http://purl.obolibrary.org/obo/IAO_0000115> "links properties back to their components" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/resource/om-2/unit> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://purl.obolibrary.org/obo/IAO_0000115> "Links measure with their unit" .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has unit" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/gbo#property> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://purl.obolibrary.org/obo/IAO_0000115> "Links properties or quantities to their measure (concrete value)" .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/gbo#hasLowerBoundNumericalValue
+<http://w3id.org/gbo#hasLowerBoundNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://w3id.org/gbo#hasUpperBoundNumericalValue
+<http://w3id.org/gbo#hasUpperBoundNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/gbo#actuating
+<http://w3id.org/gbo#actuating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#actuating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#function> .
+<http://w3id.org/gbo#actuating> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/gbo#hardware_elementary_subpart> .
+<http://w3id.org/gbo#actuating> <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:function to change or control an object" .
+# 
+# http://w3id.org/gbo#actuator
+<http://w3id.org/gbo#actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#hardware_component> .
+<http://w3id.org/gbo#actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Actuator> .
+<http://w3id.org/gbo#actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#actuating> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#implements> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#actuator> <http://purl.obolibrary.org/obo/IAO_0000115> "An actuator is a hardware component that implements some actuating function and is responsible for moving or controlling a mechanism or system." .
+<http://w3id.org/gbo#actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "Not defined in ISO26262" .
+# 
+# http://w3id.org/gbo#automatic_cruise_control
+<http://w3id.org/gbo#automatic_cruise_control> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#automatic_cruise_control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#vehicle_function> .
+<http://w3id.org/gbo#automatic_cruise_control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#camera> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#is_implemented_by> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#automatic_cruise_control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#electronic_control_unit> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#is_implemented_by> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#automatic_cruise_control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#lidar> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#is_implemented_by> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#automatic_cruise_control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#radar> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#is_implemented_by> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#automatic_cruise_control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/gbo#electronic_control_unit> .
+_:genid6 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#is_implemented_by> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#automatic_cruise_control> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/gbo#sensor> .
+_:genid7 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#is_implemented_by> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#automatic_cruise_control> <http://purl.obolibrary.org/obo/IAO_0000115> "An “automatic cruise control” is a vehicle function that can be implemented, using different ECUs and a variety of sensor technology (e.g. Radar, Lidar, Camera)." .
+<http://w3id.org/gbo#automatic_cruise_control> <http://www.w3.org/2000/01/rdf-schema#label> "automatic cruise control" .
+# 
+# http://w3id.org/gbo#camera
+<http://w3id.org/gbo#camera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#camera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#sensor> .
+# 
+# http://w3id.org/gbo#component
+<http://w3id.org/gbo#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#component> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid8 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#system> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#part_of_directly> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#software_unit> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#software_component> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid20 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/gbo#hardware_part> .
+_:genid22 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#hardware_part> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#non_system_level_element> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/gbo#component> <http://purl.obolibrary.org/obo/IAO_0000112> "A microcontroller" .
+<http://w3id.org/gbo#component> <http://purl.obolibrary.org/obo/IAO_0000115> "According to ISO26262: non-system level element (3.41) that is logically or technically separable and is comprised of more than one hardware part (3.71) or one or more software units (3.159). \n\nA component is a part of a system (3.163)." .
+# 
+# http://w3id.org/gbo#context
+<http://w3id.org/gbo#context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#context> <http://purl.obolibrary.org/obo/IAO_0000115> "The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood, e.g. Market, legal  frame conditions" .
+<http://w3id.org/gbo#context> <http://www.w3.org/2000/01/rdf-schema#label> "context" .
+# 
+# http://w3id.org/gbo#controller
+<http://w3id.org/gbo#controller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#component> .
+<http://w3id.org/gbo#controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#processing_element> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#has_part_directly> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://w3id.org/gbo#dependency
+<http://w3id.org/gbo#dependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#dependency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#property> .
+<http://w3id.org/gbo#dependency> <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:property that is a boolean or arithmetic function / equation on properties. Used to be calculated with GENIAL constraint propagation. As string in LaTex syntax." .
+<http://w3id.org/gbo#dependency> <http://www.w3.org/2000/01/rdf-schema#label> "dependency" .
+# 
+# http://w3id.org/gbo#electronic_control_unit
+<http://w3id.org/gbo#electronic_control_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#electronic_control_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#system> .
+<http://w3id.org/gbo#electronic_control_unit> <http://www.w3.org/2000/01/rdf-schema#label> "ECU" .
+<http://w3id.org/gbo#electronic_control_unit> <http://www.w3.org/2000/01/rdf-schema#label> "electronic control unit" .
+# 
+# http://w3id.org/gbo#element
+<http://w3id.org/gbo#element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000002> .
+<http://w3id.org/gbo#element> <http://www.w3.org/2002/07/owl#disjointWith> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#unionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#context> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000141> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000020> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#element> <http://purl.obolibrary.org/obo/IAO_0000115> "Continuant that is (according to ISO 26262) a system (3.163), components (3.21) (hardware or software), hardware parts (3.71), or software units (3.159)" .
+# 
+# http://w3id.org/gbo#embedded_software
+<http://w3id.org/gbo#embedded_software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#embedded_software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#software_element> .
+<http://w3id.org/gbo#embedded_software> <http://purl.obolibrary.org/obo/IAO_0000115> "a software that is (according to ISO 26262) fully-integrated software to be executed on a processing element (3.113)" .
+<http://w3id.org/gbo#embedded_software> <http://www.w3.org/2000/01/rdf-schema#label> "embedded software" .
+# 
+# http://w3id.org/gbo#engineered_object
+<http://w3id.org/gbo#engineered_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#engineered_object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<http://w3id.org/gbo#engineered_object> <http://purl.obolibrary.org/obo/IAO_0000115> "An object created, designed or engineered by humans." .
+<http://w3id.org/gbo#engineered_object> <http://www.w3.org/2000/01/rdf-schema#label> "engineered object" .
+# 
+# http://w3id.org/gbo#function
+<http://w3id.org/gbo#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000034> .
+<http://w3id.org/gbo#function> <http://purl.obolibrary.org/obo/IAO_0000115> "A bfo:function that an element (e.g. system, component, hardware or software) implements." .
+# 
+# http://w3id.org/gbo#functional_requirement
+<http://w3id.org/gbo#functional_requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#functional_requirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#requirement> .
+<http://w3id.org/gbo#functional_requirement> <http://purl.obolibrary.org/obo/IAO_0000115> "A requirement that specifies something the system should do." .
+<http://w3id.org/gbo#functional_requirement> <http://purl.obolibrary.org/obo/IAO_0000119> "https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/" .
+<http://w3id.org/gbo#functional_requirement> <http://www.w3.org/2000/01/rdf-schema#label> "functional requirement" .
+# 
+# http://w3id.org/gbo#hardware_component
+<http://w3id.org/gbo#hardware_component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#hardware_component> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/gbo#hardware_part> .
+_:genid33 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/gbo#hardware_part> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_element> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/gbo#hardware_component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#component> .
+<http://w3id.org/gbo#hardware_component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/gbo#software_component> .
+<http://w3id.org/gbo#hardware_component> <http://purl.obolibrary.org/obo/IAO_0000112> "actuator" .
+<http://w3id.org/gbo#hardware_component> <http://purl.obolibrary.org/obo/IAO_0000112> "multi core" .
+<http://w3id.org/gbo#hardware_component> <http://purl.obolibrary.org/obo/IAO_0000112> "sensor" .
+<http://w3id.org/gbo#hardware_component> <http://purl.obolibrary.org/obo/IAO_0000115> "No ISO definition. Formal Definition derived from other definitions." .
+<http://w3id.org/gbo#hardware_component> <http://www.w3.org/2000/01/rdf-schema#label> "hardware component" .
+# 
+# http://w3id.org/gbo#hardware_element
+<http://w3id.org/gbo#hardware_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#hardware_element> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_subpart> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_part> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_elementary_subpart> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_component> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#hardware_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#engineered_object> .
+<http://w3id.org/gbo#hardware_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#non_system_level_element> .
+<http://w3id.org/gbo#hardware_element> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/gbo#software_element> .
+<http://w3id.org/gbo#hardware_element> <http://www.w3.org/2000/01/rdf-schema#comment> "From definition of element:\nNote 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively." .
+<http://w3id.org/gbo#hardware_element> <http://www.w3.org/2000/01/rdf-schema#label> "hardware" .
+<http://w3id.org/gbo#hardware_element> <http://www.w3.org/2000/01/rdf-schema#label> "hardware element" .
+# 
+# http://w3id.org/gbo#hardware_elementary_subpart
+<http://w3id.org/gbo#hardware_elementary_subpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#hardware_elementary_subpart> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid42 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/gbo#hardware_subpart> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#part_of_directly> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_element> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/gbo#hardware_elementary_subpart> <http://purl.obolibrary.org/obo/IAO_0000112> "A flip-flop of the ALU with its logic cone, a register." .
+<http://w3id.org/gbo#hardware_elementary_subpart> <http://purl.obolibrary.org/obo/IAO_0000115> "smallest portion of a hardware subpart (3.73) considered in safety (3.132) analysis" .
+<http://w3id.org/gbo#hardware_elementary_subpart> <http://www.w3.org/2000/01/rdf-schema#label> "hardware elementary subpart" .
+# 
+# http://w3id.org/gbo#hardware_part
+<http://w3id.org/gbo#hardware_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#hardware_part> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid46 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/gbo#component> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#part_of_directly> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_element> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/gbo#hardware_part> <http://purl.obolibrary.org/obo/IAO_0000112> "The CPU of a microcontroller, a resistor, flash array of a microcontroller." .
+<http://w3id.org/gbo#hardware_part> <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of hardware that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition." .
+<http://w3id.org/gbo#hardware_part> <http://www.w3.org/2000/01/rdf-schema#label> "hardware part" .
+# 
+# http://w3id.org/gbo#hardware_subpart
+<http://w3id.org/gbo#hardware_subpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#hardware_subpart> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid50 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#unionOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_subpart> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_part> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#part_of_directly> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#unionOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_subpart> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_elementary_subpart> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#has_part_directly> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_element> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/gbo#hardware_subpart> <http://purl.obolibrary.org/obo/IAO_0000112> "ALU of a CPU of a microcontroller" .
+<http://w3id.org/gbo#hardware_subpart> <http://purl.obolibrary.org/obo/IAO_0000112> "register bank of a CPU" .
+<http://w3id.org/gbo#hardware_subpart> <http://purl.obolibrary.org/obo/IAO_0000115> "Portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition." .
+<http://w3id.org/gbo#hardware_subpart> <http://www.w3.org/2000/01/rdf-schema#label> "hardware subpart" .
+# 
+# http://w3id.org/gbo#item
+<http://w3id.org/gbo#item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#item> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid62 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/gbo#vehicle_function> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#implements> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#unionOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#system> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#part_of> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#system> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#has_part> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#system> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/gbo#item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#system_level_element> .
+<http://w3id.org/gbo#item> <http://purl.obolibrary.org/obo/IAO_0000115> "System level element that is (according to ISO26262) system (3.163) or combination of systems (3.163), to which ISO 26262 is applied, that implements a function or part of a function at the vehicle level.\n\nNote 1 to entry: See vehicle function (3.178)." .
+# 
+# http://w3id.org/gbo#legal_boundary_condition
+<http://w3id.org/gbo#legal_boundary_condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#legal_boundary_condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#context> .
+<http://w3id.org/gbo#legal_boundary_condition> <http://www.w3.org/2000/01/rdf-schema#label> "legal boundary conditon" .
+# 
+# http://w3id.org/gbo#lidar
+<http://w3id.org/gbo#lidar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#lidar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#sensor> .
+# 
+# http://w3id.org/gbo#market
+<http://w3id.org/gbo#market> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#market> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#context> .
+<http://w3id.org/gbo#market> <http://www.w3.org/2000/01/rdf-schema#label> "market" .
+# 
+# http://w3id.org/gbo#material_object
+<http://w3id.org/gbo#material_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#material_object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<http://w3id.org/gbo#material_object> <http://www.w3.org/2000/01/rdf-schema#label> "material object" .
+# 
+# http://w3id.org/gbo#mechanical_object
+<http://w3id.org/gbo#mechanical_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#mechanical_object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#engineered_object> .
+<http://w3id.org/gbo#mechanical_object> <http://purl.obolibrary.org/obo/IAO_0000112> "vehicle" .
+<http://w3id.org/gbo#mechanical_object> <http://purl.obolibrary.org/obo/IAO_0000115> "An engineered object that has mechanical characteristics. They can be either dominant mechanical characteristics like in a vehicle or wheel or less dominant like in a battery." .
+<http://w3id.org/gbo#mechanical_object> <http://www.w3.org/2000/01/rdf-schema#label> "mechanical object" .
+# 
+# http://w3id.org/gbo#non_functional_requirement
+<http://w3id.org/gbo#non_functional_requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#non_functional_requirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#requirement> .
+<http://w3id.org/gbo#non_functional_requirement> <http://purl.obolibrary.org/obo/IAO_0000115> "A requirement that describes how the system works." .
+<http://w3id.org/gbo#non_functional_requirement> <http://purl.obolibrary.org/obo/IAO_0000119> "https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/" .
+<http://w3id.org/gbo#non_functional_requirement> <http://www.w3.org/2000/01/rdf-schema#label> "non functional requirement" .
+# 
+# http://w3id.org/gbo#non_system_level_element
+<http://w3id.org/gbo#non_system_level_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#non_system_level_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#element> .
+<http://w3id.org/gbo#non_system_level_element> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/gbo#system_level_element> .
+<http://w3id.org/gbo#non_system_level_element> <http://purl.obolibrary.org/obo/IAO_0000115> "An element that is not on the system-level" .
+<http://w3id.org/gbo#non_system_level_element> <http://www.w3.org/2000/01/rdf-schema#label> "non system level element" .
+# 
+# http://w3id.org/gbo#operating_time
+<http://w3id.org/gbo#operating_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#operating_time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+<http://w3id.org/gbo#operating_time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#unionOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#item> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#element> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#property_of> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#operating_time> <http://purl.obolibrary.org/obo/IAO_0000115> "A quantity that is (according to ISO 26262) a cumulative time that an item (3.84) or element (3.41) is functioning, including degraded modes." .
+<http://w3id.org/gbo#operating_time> <http://www.w3.org/2000/01/rdf-schema#label> "operating time" .
+# 
+# http://w3id.org/gbo#performance
+<http://w3id.org/gbo#performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#performance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#property> .
+<http://w3id.org/gbo#performance> <http://purl.obolibrary.org/obo/IAO_0000115> "a gbo:property on how well a person, machine, etc. does a piece of work or an activity" .
+<http://w3id.org/gbo#performance> <http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.cambridge.org/dictionary/english/performance" .
+# 
+# http://w3id.org/gbo#processing
+<http://w3id.org/gbo#processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#function> .
+<http://w3id.org/gbo#processing> <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:function to calculate a set of instructions or software" .
+# 
+# http://w3id.org/gbo#processing_element
+<http://w3id.org/gbo#processing_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#processing_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#hardware_part> .
+<http://w3id.org/gbo#processing_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#processing> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#implements> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#processing_element> <http://purl.obolibrary.org/obo/IAO_0000115> "(according to ISO26262) hardware part (3.71) providing a set of functions for data processing, normally consisting of a register set, an execution unit, and a control unit" .
+<http://w3id.org/gbo#processing_element> <http://www.w3.org/2000/01/rdf-schema#label> "processing element" .
+<http://w3id.org/gbo#processing_element> <http://www.w3.org/2000/01/rdf-schema#label> "processing unit" .
+<http://w3id.org/gbo#processing_element> <http://www.w3.org/2000/01/rdf-schema#label> "processor" .
+# 
+# http://w3id.org/gbo#property
+<http://w3id.org/gbo#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://w3id.org/gbo#property> <http://purl.obolibrary.org/obo/IAO_0000112> "drag coefficient" .
+<http://w3id.org/gbo#property> <http://purl.obolibrary.org/obo/IAO_0000112> "power" .
+<http://w3id.org/gbo#property> <http://purl.obolibrary.org/obo/IAO_0000112> "temperature" .
+<http://w3id.org/gbo#property> <http://purl.obolibrary.org/obo/IAO_0000115> "A quality or characteristic of an element, hardware, software or function. A property has a boolean, integer, or real variable through the measure class. Specifically properties can be unquantified and quantified. But quantified properties are quantities." .
+<http://w3id.org/gbo#property> <http://www.w3.org/2000/01/rdf-schema#label> "property" .
+# 
+# http://w3id.org/gbo#radar
+<http://w3id.org/gbo#radar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#radar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#sensor> .
+# 
+# http://w3id.org/gbo#requirement
+<http://w3id.org/gbo#requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#requirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#property> .
+<http://w3id.org/gbo#requirement> <http://purl.obolibrary.org/obo/IAO_0000115> "A property that is wanted or needed." .
+<http://w3id.org/gbo#requirement> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.merriam-webster.com/dictionary/requirement" .
+# 
+# http://w3id.org/gbo#sensing
+<http://w3id.org/gbo#sensing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#sensing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#function> .
+<http://w3id.org/gbo#sensing> <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:function to perceive an object" .
+# 
+# http://w3id.org/gbo#sensor
+<http://w3id.org/gbo#sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#hardware_component> .
+<http://w3id.org/gbo#sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://w3id.org/gbo#sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#sensing> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#implements> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#sensor> <http://purl.obolibrary.org/obo/IAO_0000112> "accelerometer" .
+<http://w3id.org/gbo#sensor> <http://purl.obolibrary.org/obo/IAO_0000112> "humidity sensor" .
+<http://w3id.org/gbo#sensor> <http://purl.obolibrary.org/obo/IAO_0000112> "radar" .
+<http://w3id.org/gbo#sensor> <http://purl.obolibrary.org/obo/IAO_0000115> "Hardware component that implements some sensing function." .
+<http://w3id.org/gbo#sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Not defined in ISO26262" .
+# 
+# http://w3id.org/gbo#social_object
+<http://w3id.org/gbo#social_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#social_object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<http://w3id.org/gbo#social_object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#unionOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000030> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000027> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#social_object> <http://purl.obolibrary.org/obo/IAO_0000112> "organisation" .
+<http://w3id.org/gbo#social_object> <http://purl.obolibrary.org/obo/IAO_0000112> "person" .
+<http://w3id.org/gbo#social_object> <http://purl.obolibrary.org/obo/IAO_0000115> "An object or object aggregate that stands in a social role." .
+<http://w3id.org/gbo#social_object> <http://www.w3.org/2000/01/rdf-schema#label> "social object" .
+# 
+# http://w3id.org/gbo#software_component
+<http://w3id.org/gbo#software_component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#software_component> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid81 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/gbo#software_unit> .
+_:genid83 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid85 .
+_:genid85 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/gbo#software_unit> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#software_unit> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#software_element> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/gbo#software_component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#component> .
+<http://w3id.org/gbo#software_component> <http://purl.obolibrary.org/obo/IAO_0000115> "one or more softwareunits (3.159)" .
+<http://w3id.org/gbo#software_component> <http://www.w3.org/2000/01/rdf-schema#label> "software component" .
+# 
+# http://w3id.org/gbo#software_element
+<http://w3id.org/gbo#software_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#software_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000031> .
+<http://w3id.org/gbo#software_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#non_system_level_element> .
+<http://w3id.org/gbo#software_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#processing_element> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#is_executed_by> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/gbo#software_element> <http://www.w3.org/2000/01/rdf-schema#comment> "From definition of element:\nNote 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively." .
+<http://w3id.org/gbo#software_element> <http://www.w3.org/2000/01/rdf-schema#label> "software" .
+<http://w3id.org/gbo#software_element> <http://www.w3.org/2000/01/rdf-schema#label> "software element" .
+# 
+# http://w3id.org/gbo#software_unit
+<http://w3id.org/gbo#software_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#software_unit> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid90 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/gbo#software_element> .
+_:genid92 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/gbo#software_element> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#software_element> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/gbo#software_unit> <http://purl.obolibrary.org/obo/IAO_0000115> "a piece of software that is (according to ISO26262) an atomic level software component (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)" .
+<http://w3id.org/gbo#software_unit> <http://www.w3.org/2000/01/rdf-schema#label> "software unit" .
+# 
+# http://w3id.org/gbo#system
+<http://w3id.org/gbo#system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#system> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid96 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid98 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
+_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#sensor> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#controller> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid104 .
+_:genid104 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/gbo#actuator> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/gbo#comprised_of> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#system_level_element> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/gbo#system> <http://purl.obolibrary.org/obo/IAO_0000115> "System level element that is according to ISO 26262: set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another.\n\nNote 1 to entry: The related sensor or actuator can be included in the system, or can be external to the system." .
+# 
+# http://w3id.org/gbo#system_level_element
+<http://w3id.org/gbo#system_level_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#system_level_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#element> .
+<http://w3id.org/gbo#system_level_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#engineered_object> .
+<http://w3id.org/gbo#system_level_element> <http://purl.obolibrary.org/obo/IAO_0000115> "An element that is on the system level" .
+<http://w3id.org/gbo#system_level_element> <http://www.w3.org/2000/01/rdf-schema#label> "system level element" .
+# 
+# http://w3id.org/gbo#vehicle_function
+<http://w3id.org/gbo#vehicle_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/gbo#vehicle_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#function> .
+<http://w3id.org/gbo#vehicle_function> <http://purl.obolibrary.org/obo/IAO_0000112> "An “automatic cruise control” is a vehicle function that can be implemented, using different ECUs and a variety of sensor technology (e.g. Radar, Lidar, Camera)." .
+<http://w3id.org/gbo#vehicle_function> <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:function that is (according to ISO26262) behaviour of the vehicle, intended by the implementation of one or more items (3.84), that is observable by the customer." .
+<http://w3id.org/gbo#vehicle_function> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle function" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/measure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
+_:genid106 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://purl.obolibrary.org/obo/IAO_0000115> "A bfo:quality that are amounts of quantities." .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://www.w3.org/2000/01/rdf-schema#label> "measure" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/quantity
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/gbo#property> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> <http://purl.obolibrary.org/obo/IAO_0000115> "A quantity is a (property that is quanitifiable and a) representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length." .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/unit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> <http://purl.obolibrary.org/obo/IAO_0000115> "A quality that is any standard used for comparison in measurements." .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> <http://www.w3.org/2000/01/rdf-schema#label> "unit" .
+# 
+# http://www.w3.org/ns/sosa/Actuator
+<http://www.w3.org/ns/sosa/Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid107 <http://www.w3.org/2002/07/owl#members> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_subpart> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_part> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_elementary_subpart> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/gbo#hardware_component> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18.2021-07-30T21:49:07Z) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>GENIAL! Basic Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/gbo","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://w3id.org/gbo","name":"GENIAL! Basic Ontology", "headline":"Document describing the ontology http://w3id.org/gbo", "dateReleased":"2024-09-12", "version":"0.2.4", "codeRepository":"https://github.com/wawrzik/GENIALOntologies/tree/master/OntologyModuleSuite/GENIAL!BasicOntology", "author":[{"@type":"Person","name":"Frank Wawrzik"}], "contributor":[{"@type":"Person","name":"Christoph Grimm"},{"@type":"Person","name":"Peter Neumann"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>GENIAL! Basic Ontology</h1>
+<h2>Release: 2024-09-12</h2>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://w3id.org/gbo/0.2.4">http://w3id.org/gbo/0.2.4</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://w3id.org/gbo">http://w3id.org/gbo</a></dd>
+<dt>Revision:</dt>
+<dd>0.2.4</dd>
+<dt>Authors:</dt>
+<dd>Frank Wawrzik</dd>
+
+<dt>Contributors:</dt>
+<dd>Christoph Grimm</dd><dd>Peter Neumann</dd>
+
+<dt>Imported Ontologies:</dt>
+<dd><a href="http://purl.obolibrary.org/obo/bfo.owl">bfo.owl</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Frank Wawrzik. GENIAL! Basic Ontology. Revision: 0.2.4. Retrieved from: http://w3id.org/gbo/0.2.4</dd>
+<dt>Vocabulary maintained at:</dt>
+<dd><a href="https://github.com/wawrzik/GENIALOntologies/tree/master/OntologyModuleSuite/GENIAL!BasicOntology">https://github.com/wawrzik/GENIALOntologies/tree/master/OntologyModuleSuite/GENIAL!BasicOntology</a></dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://w3id.org/gbo&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1/&gt;</td></tr>
+<tr><td><b>gbo</b></td><td>&lt;http://w3id.org/gbo#&gt;</td></tr>
+<tr><td><b>obo</b></td><td>&lt;http://purl.obolibrary.org/obo/&gt;</td></tr>
+<tr><td><b>om-2</b></td><td>&lt;http://www.ontology-of-units-of-measure.org/resource/om-2/&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>sosa</b></td><td>&lt;http://www.w3.org/ns/sosa/&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">GENIAL! Basic Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#actuating" title="http://w3id.org/gbo#actuating">
+         <span>actuating</span>
+      </a>
+   </li>
+   <li>
+      <a href="#actuator" title="http://w3id.org/gbo#actuator">
+         <span>actuator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#automatic_cruise_control" title="http://w3id.org/gbo#automatic_cruise_control">automatic cruise control</a>
+   </li>
+   <li>
+      <a href="#camera" title="http://w3id.org/gbo#camera">
+         <span>camera</span>
+      </a>
+   </li>
+   <li>
+      <a href="#component" title="http://w3id.org/gbo#component">
+         <span>component</span>
+      </a>
+   </li>
+   <li>
+      <a href="#context" title="http://w3id.org/gbo#context">context</a>
+   </li>
+   <li>
+      <a href="#controller" title="http://w3id.org/gbo#controller">
+         <span>controller</span>
+      </a>
+   </li>
+   <li>
+      <a href="#dependency" title="http://w3id.org/gbo#dependency">dependency</a>
+   </li>
+   <li>
+      <a href="#electronic_control_unit" title="http://w3id.org/gbo#electronic_control_unit">ECU</a>
+   </li>
+   <li>
+      <a href="#element" title="http://w3id.org/gbo#element">
+         <span>element</span>
+      </a>
+   </li>
+   <li>
+      <a href="#embedded_software" title="http://w3id.org/gbo#embedded_software">embedded software</a>
+   </li>
+   <li>
+      <a href="#engineered_object" title="http://w3id.org/gbo#engineered_object">engineered object</a>
+   </li>
+   <li>
+      <a href="#function" title="http://w3id.org/gbo#function">
+         <span>function</span>
+      </a>
+   </li>
+   <li>
+      <a href="#functional_requirement" title="http://w3id.org/gbo#functional_requirement">functional requirement</a>
+   </li>
+   <li>
+      <a href="#hardware_element" title="http://w3id.org/gbo#hardware_element">hardware</a>
+   </li>
+   <li>
+      <a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a>
+   </li>
+   <li>
+      <a href="#hardware_elementary_subpart" title="http://w3id.org/gbo#hardware_elementary_subpart">hardware elementary subpart</a>
+   </li>
+   <li>
+      <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a>
+   </li>
+   <li>
+      <a href="#hardware_subpart" title="http://w3id.org/gbo#hardware_subpart">hardware subpart</a>
+   </li>
+   <li>
+      <a href="#item" title="http://w3id.org/gbo#item">
+         <span>item</span>
+      </a>
+   </li>
+   <li>
+      <a href="#legal_boundary_condition" title="http://w3id.org/gbo#legal_boundary_condition">legal boundary conditon</a>
+   </li>
+   <li>
+      <a href="#lidar" title="http://w3id.org/gbo#lidar">
+         <span>lidar</span>
+      </a>
+   </li>
+   <li>
+      <a href="#market" title="http://w3id.org/gbo#market">market</a>
+   </li>
+   <li>
+      <a href="#material_object" title="http://w3id.org/gbo#material_object">material object</a>
+   </li>
+   <li>
+      <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/measure"
+         title="http://www.ontology-of-units-of-measure.org/resource/om-2/measure">measure</a>
+   </li>
+   <li>
+      <a href="#mechanical_object" title="http://w3id.org/gbo#mechanical_object">mechanical object</a>
+   </li>
+   <li>
+      <a href="#non_functional_requirement" title="http://w3id.org/gbo#non_functional_requirement">non functional requirement</a>
+   </li>
+   <li>
+      <a href="#non_system_level_element" title="http://w3id.org/gbo#non_system_level_element">non system level element</a>
+   </li>
+   <li>
+      <a href="#operating_time" title="http://w3id.org/gbo#operating_time">operating time</a>
+   </li>
+   <li>
+      <a href="#performance" title="http://w3id.org/gbo#performance">
+         <span>performance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#processing" title="http://w3id.org/gbo#processing">
+         <span>processing</span>
+      </a>
+   </li>
+   <li>
+      <a href="#processing_element" title="http://w3id.org/gbo#processing_element">processing element</a>
+   </li>
+   <li>
+      <a href="#property" title="http://w3id.org/gbo#property">property</a>
+   </li>
+   <li>
+      <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"
+         title="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity">
+         <span>quantity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#radar" title="http://w3id.org/gbo#radar">
+         <span>radar</span>
+      </a>
+   </li>
+   <li>
+      <a href="#requirement" title="http://w3id.org/gbo#requirement">
+         <span>requirement</span>
+      </a>
+   </li>
+   <li>
+      <a href="#sensing" title="http://w3id.org/gbo#sensing">
+         <span>sensing</span>
+      </a>
+   </li>
+   <li>
+      <a href="#sensor" title="http://w3id.org/gbo#sensor">
+         <span>sensor</span>
+      </a>
+   </li>
+   <li>
+      <a href="#social_object" title="http://w3id.org/gbo#social_object">social object</a>
+   </li>
+   <li>
+      <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a>
+   </li>
+   <li>
+      <a href="#software_component" title="http://w3id.org/gbo#software_component">software component</a>
+   </li>
+   <li>
+      <a href="#software_unit" title="http://w3id.org/gbo#software_unit">software unit</a>
+   </li>
+   <li>
+      <a href="#system" title="http://w3id.org/gbo#system">
+         <span>system</span>
+      </a>
+   </li>
+   <li>
+      <a href="#system_level_element" title="http://w3id.org/gbo#system_level_element">system level element</a>
+   </li>
+   <li>
+      <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/unit"
+         title="http://www.ontology-of-units-of-measure.org/resource/om-2/unit">unit</a>
+   </li>
+   <li>
+      <a href="#vehicle_function" title="http://w3id.org/gbo#vehicle_function">vehicle function</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#depends_on" title="http://w3id.org/gbo#depends_on">
+         <span>depends on</span>
+      </a>
+   </li>
+   <li>
+      <a href="#executes" title="http://w3id.org/gbo#executes">
+         <span>executes</span>
+      </a>
+   </li>
+   <li>
+      <a href="#has_part" title="http://w3id.org/gbo#has_part">
+         <span>has part</span>
+      </a>
+   </li>
+   <li>
+      <a href="#has_part_directly" title="http://w3id.org/gbo#has_part_directly">
+         <span>has part directly</span>
+      </a>
+   </li>
+   <li>
+      <a href="#has_property" title="http://w3id.org/gbo#has_property">
+         <span>has property</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"
+         title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">has unit</a>
+   </li>
+   <li>
+      <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"
+         title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue">has value</a>
+   </li>
+   <li>
+      <a href="#implements" title="http://w3id.org/gbo#implements">
+         <span>implements</span>
+      </a>
+   </li>
+   <li>
+      <a href="#is_executed_by" title="http://w3id.org/gbo#is_executed_by">
+         <span>is executed by</span>
+      </a>
+   </li>
+   <li>
+      <a href="#is_implemented_by" title="http://w3id.org/gbo#is_implemented_by">
+         <span>is implemented by</span>
+      </a>
+   </li>
+   <li>
+      <a href="#part_of" title="http://w3id.org/gbo#part_of">
+         <span>part of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#part_of_directly" title="http://w3id.org/gbo#part_of_directly">
+         <span>part of directly</span>
+      </a>
+   </li>
+   <li>
+      <a href="#property_of" title="http://w3id.org/gbo#property_of">
+         <span>property of</span>
+      </a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">GENIAL! Basic Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL!. It supports the modelling of microlectronic components like sensors, acutators, processors and software along the automotive value chain.</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for GENIAL! Basic Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by GENIAL! Basic Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#actuating" title="http://w3id.org/gbo#actuating"> <span>actuating</span> </a></li>
+  <li><a href="#actuator" title="http://w3id.org/gbo#actuator"> <span>actuator</span> </a></li>
+  <li><a href="#automatic_cruise_control" title="http://w3id.org/gbo#automatic_cruise_control">automatic cruise control</a></li>
+  <li><a href="#camera" title="http://w3id.org/gbo#camera"> <span>camera</span> </a></li>
+  <li><a href="#component" title="http://w3id.org/gbo#component"> <span>component</span> </a></li>
+  <li><a href="#context" title="http://w3id.org/gbo#context">context</a></li>
+  <li><a href="#controller" title="http://w3id.org/gbo#controller"> <span>controller</span> </a></li>
+  <li><a href="#dependency" title="http://w3id.org/gbo#dependency">dependency</a></li>
+  <li><a href="#electronic_control_unit" title="http://w3id.org/gbo#electronic_control_unit">ECU</a></li>
+  <li><a href="#element" title="http://w3id.org/gbo#element"> <span>element</span> </a></li>
+  <li><a href="#embedded_software" title="http://w3id.org/gbo#embedded_software">embedded software</a></li>
+  <li><a href="#engineered_object" title="http://w3id.org/gbo#engineered_object">engineered object</a></li>
+  <li><a href="#function" title="http://w3id.org/gbo#function"> <span>function</span> </a></li>
+  <li><a href="#functional_requirement" title="http://w3id.org/gbo#functional_requirement">functional requirement</a></li>
+  <li><a href="#hardware_element" title="http://w3id.org/gbo#hardware_element">hardware</a></li>
+  <li><a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a></li>
+  <li><a href="#hardware_elementary_subpart" title="http://w3id.org/gbo#hardware_elementary_subpart">hardware elementary subpart</a></li>
+  <li><a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a></li>
+  <li><a href="#hardware_subpart" title="http://w3id.org/gbo#hardware_subpart">hardware subpart</a></li>
+  <li><a href="#item" title="http://w3id.org/gbo#item"> <span>item</span> </a></li>
+  <li><a href="#legal_boundary_condition" title="http://w3id.org/gbo#legal_boundary_condition">legal boundary conditon</a></li>
+  <li><a href="#lidar" title="http://w3id.org/gbo#lidar"> <span>lidar</span> </a></li>
+  <li><a href="#market" title="http://w3id.org/gbo#market">market</a></li>
+  <li><a href="#material_object" title="http://w3id.org/gbo#material_object">material object</a></li>
+  <li><a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/measure" title="http://www.ontology-of-units-of-measure.org/resource/om-2/measure">measure</a></li>
+  <li><a href="#mechanical_object" title="http://w3id.org/gbo#mechanical_object">mechanical object</a></li>
+  <li><a href="#non_functional_requirement" title="http://w3id.org/gbo#non_functional_requirement">non functional requirement</a></li>
+  <li><a href="#non_system_level_element" title="http://w3id.org/gbo#non_system_level_element">non system level element</a></li>
+  <li><a href="#operating_time" title="http://w3id.org/gbo#operating_time">operating time</a></li>
+  <li><a href="#performance" title="http://w3id.org/gbo#performance"> <span>performance</span> </a></li>
+  <li><a href="#processing" title="http://w3id.org/gbo#processing"> <span>processing</span> </a></li>
+  <li><a href="#processing_element" title="http://w3id.org/gbo#processing_element">processing element</a></li>
+  <li><a href="#property" title="http://w3id.org/gbo#property">property</a></li>
+  <li><a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/quantity" title="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"> <span>quantity</span> </a></li>
+  <li><a href="#radar" title="http://w3id.org/gbo#radar"> <span>radar</span> </a></li>
+  <li><a href="#requirement" title="http://w3id.org/gbo#requirement"> <span>requirement</span> </a></li>
+  <li><a href="#sensing" title="http://w3id.org/gbo#sensing"> <span>sensing</span> </a></li>
+  <li><a href="#sensor" title="http://w3id.org/gbo#sensor"> <span>sensor</span> </a></li>
+  <li><a href="#social_object" title="http://w3id.org/gbo#social_object">social object</a></li>
+  <li><a href="#software_element" title="http://w3id.org/gbo#software_element">software</a></li>
+  <li><a href="#software_component" title="http://w3id.org/gbo#software_component">software component</a></li>
+  <li><a href="#software_unit" title="http://w3id.org/gbo#software_unit">software unit</a></li>
+  <li><a href="#system" title="http://w3id.org/gbo#system"> <span>system</span> </a></li>
+  <li><a href="#system_level_element" title="http://w3id.org/gbo#system_level_element">system level element</a></li>
+  <li><a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/unit" title="http://www.ontology-of-units-of-measure.org/resource/om-2/unit">unit</a></li>
+  <li><a href="#vehicle_function" title="http://w3id.org/gbo#vehicle_function">vehicle function</a></li>
+ </ul>
+ <div class="entity" id="actuating">
+  <h3>actuating<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#actuating</p>
+  <div class="comment">
+   <span class="markdown">A gbo:function to change or control an object</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#function" title="http://w3id.org/gbo#function">function</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#hardware_elementary_subpart" title="http://w3id.org/gbo#hardware_elementary_subpart">hardware elementary subpart</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="actuator">
+  <h3>actuator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#actuator</p>
+  <div class="comment">
+   <span class="markdown">An actuator is a hardware component that implements some actuating function and is responsible for moving or controlling a mechanism or system.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Not defined in ISO26262</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/Actuator" target="_blank" title="http://www.w3.org/ns/sosa/Actuator">Actuator</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="automatic_cruise_control">
+  <h3>automatic cruise control<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#automatic_cruise_control</p>
+  <div class="comment">
+   <span class="markdown">An “automatic cruise control” is a vehicle function that can be implemented, using different ECUs and a variety of sensor technology (e.g. Radar, Lidar, Camera).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#vehicle_function" title="http://w3id.org/gbo#vehicle_function">vehicle function</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="camera">
+  <h3>camera<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#camera</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#sensor" title="http://w3id.org/gbo#sensor">sensor</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="component">
+  <h3>component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#component</p>
+  <div class="comment">
+   <span class="markdown">According to ISO26262: non-system level element (3.41) that is logically or technically separable and is comprised of more than one hardware part (3.71) or one or more software units (3.159). A component is a part of a system (3.163).</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>A microcontroller</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#non_system_level_element" title="http://w3id.org/gbo#non_system_level_element">non system level element</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (((<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">min</span> 2 <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup>)) <span class="logic">or</span> ((<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#software_component" title="http://w3id.org/gbo#software_component">software component</a> <sup class="type-c" title="class">c</sup>) <span class="logic">or</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#software_unit" title="http://w3id.org/gbo#software_unit">software unit</a> <sup class="type-c" title="class">c</sup>))) <span class="logic">and</span> (<a href="#part_of_directly" title="http://w3id.org/gbo#part_of_directly">part of directly</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#system" title="http://w3id.org/gbo#system">system</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#controller" title="http://w3id.org/gbo#controller">controller</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a> <sup class="type-c" title="class">c</sup>, <a href="#software_component" title="http://w3id.org/gbo#software_component">software component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="context">
+  <h3>context<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#context</p>
+  <div class="comment">
+   <span class="markdown">The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood, e.g. Market, legal frame conditions</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#legal_boundary_condition" title="http://w3id.org/gbo#legal_boundary_condition">legal boundary conditon</a> <sup class="type-c" title="class">c</sup>, <a href="#market" title="http://w3id.org/gbo#market">market</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="controller">
+  <h3>controller<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#controller</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#component" title="http://w3id.org/gbo#component">component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="dependency">
+  <h3>dependency<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#dependency</p>
+  <div class="comment">
+   <span class="markdown">A gbo:property that is a boolean or arithmetic function / equation on properties. Used to be calculated with GENIAL constraint propagation. As string in LaTex syntax.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#property" title="http://w3id.org/gbo#property">property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#depends_on" title="http://w3id.org/gbo#depends_on">depends on</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="electronic_control_unit">
+  <h3>ECU<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#electronic_control_unit</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#system" title="http://w3id.org/gbo#system">system</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="element">
+  <h3>element<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#element</p>
+  <div class="comment">
+   <span class="markdown">Continuant that is (according to ISO 26262) a system (3.163), components (3.21) (hardware or software), hardware parts (3.71), or software units (3.159)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000002" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000002">B F O 0000002</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#non_system_level_element" title="http://w3id.org/gbo#non_system_level_element">non system level element</a> <sup class="type-c" title="class">c</sup>, <a href="#system_level_element" title="http://w3id.org/gbo#system_level_element">system level element</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#has_property" title="http://w3id.org/gbo#has_property">has property</a> <sup class="type-op" title="object property">op</sup>, <a href="#implements" title="http://w3id.org/gbo#implements">implements</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#is_implemented_by" title="http://w3id.org/gbo#is_implemented_by">is implemented by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="embedded_software">
+  <h3>embedded software<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#embedded_software</p>
+  <div class="comment">
+   <span class="markdown">a software that is (according to ISO 26262) fully-integrated software to be executed on a processing element (3.113)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="engineered_object">
+  <h3>engineered object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#engineered_object</p>
+  <div class="comment">
+   <span class="markdown">An object created, designed or engineered by humans.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000030" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000030">B F O 0000030</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#hardware_element" title="http://w3id.org/gbo#hardware_element">hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#mechanical_object" title="http://w3id.org/gbo#mechanical_object">mechanical object</a> <sup class="type-c" title="class">c</sup>, <a href="#system_level_element" title="http://w3id.org/gbo#system_level_element">system level element</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="function">
+  <h3>function<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#function</p>
+  <div class="comment">
+   <span class="markdown">A bfo:function that an element (e.g. system, component, hardware or software) implements.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000034" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000034">B F O 0000034</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#actuating" title="http://w3id.org/gbo#actuating">actuating</a> <sup class="type-c" title="class">c</sup>, <a href="#processing" title="http://w3id.org/gbo#processing">processing</a> <sup class="type-c" title="class">c</sup>, <a href="#sensing" title="http://w3id.org/gbo#sensing">sensing</a> <sup class="type-c" title="class">c</sup>, <a href="#vehicle_function" title="http://w3id.org/gbo#vehicle_function">vehicle function</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#is_implemented_by" title="http://w3id.org/gbo#is_implemented_by">is implemented by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="functional_requirement">
+  <h3>functional requirement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#functional_requirement</p>
+  <div class="comment">
+   <span class="markdown">A requirement that specifies something the system should do.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#requirement" title="http://w3id.org/gbo#requirement">requirement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="hardware_element">
+  <h3>hardware<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#hardware_element</p>
+  <div class="comment">
+   <span class="markdown">From definition of element: Note 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#hardware_elementary_subpart" title="http://w3id.org/gbo#hardware_elementary_subpart">hardware elementary subpart</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#hardware_subpart" title="http://w3id.org/gbo#hardware_subpart">hardware subpart</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#engineered_object" title="http://w3id.org/gbo#engineered_object">engineered object</a> <sup class="type-c" title="class">c</sup>, <a href="#non_system_level_element" title="http://w3id.org/gbo#non_system_level_element">non system level element</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="hardware_component">
+  <h3>hardware component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#hardware_component</p>
+  <div class="comment">
+   <span class="markdown">No ISO definition. Formal Definition derived from other definitions.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>actuator</pre>
+   </dd>
+   <dd>
+    <pre>multi core</pre>
+   </dd>
+   <dd>
+    <pre>sensor</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#hardware_element" title="http://w3id.org/gbo#hardware_element">hardware</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">min</span> 2 <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#component" title="http://w3id.org/gbo#component">component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#actuator" title="http://w3id.org/gbo#actuator">actuator</a> <sup class="type-c" title="class">c</sup>, <a href="#sensor" title="http://w3id.org/gbo#sensor">sensor</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#software_component" title="http://w3id.org/gbo#software_component">software component</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_elementary_subpart" title="http://w3id.org/gbo#hardware_elementary_subpart">hardware elementary subpart</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_subpart" title="http://w3id.org/gbo#hardware_subpart">hardware subpart</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="hardware_elementary_subpart">
+  <h3>hardware elementary subpart<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#hardware_elementary_subpart</p>
+  <div class="comment">
+   <span class="markdown">smallest portion of a hardware subpart (3.73) considered in safety (3.132) analysis</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>A flip-flop of the ALU with its logic cone, a register.</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#hardware_element" title="http://w3id.org/gbo#hardware_element">hardware</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#part_of_directly" title="http://w3id.org/gbo#part_of_directly">part of directly</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#hardware_subpart" title="http://w3id.org/gbo#hardware_subpart">hardware subpart</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#actuating" title="http://w3id.org/gbo#actuating">actuating</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_subpart" title="http://w3id.org/gbo#hardware_subpart">hardware subpart</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="hardware_part">
+  <h3>hardware part<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#hardware_part</p>
+  <div class="comment">
+   <span class="markdown">A piece of hardware that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>The CPU of a microcontroller, a resistor, flash array of a microcontroller.</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#hardware_element" title="http://w3id.org/gbo#hardware_element">hardware</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#part_of_directly" title="http://w3id.org/gbo#part_of_directly">part of directly</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#component" title="http://w3id.org/gbo#component">component</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#processing_element" title="http://w3id.org/gbo#processing_element">processing element</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_elementary_subpart" title="http://w3id.org/gbo#hardware_elementary_subpart">hardware elementary subpart</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_subpart" title="http://w3id.org/gbo#hardware_subpart">hardware subpart</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="hardware_subpart">
+  <h3>hardware subpart<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#hardware_subpart</p>
+  <div class="comment">
+   <span class="markdown">Portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>ALU of a CPU of a microcontroller</pre>
+   </dd>
+   <dd>
+    <pre>register bank of a CPU</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#hardware_element" title="http://w3id.org/gbo#hardware_element">hardware</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#has_part_directly" title="http://w3id.org/gbo#has_part_directly">has part directly</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#hardware_elementary_subpart" title="http://w3id.org/gbo#hardware_elementary_subpart">hardware elementary subpart</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#hardware_subpart" title="http://w3id.org/gbo#hardware_subpart">hardware subpart</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#part_of_directly" title="http://w3id.org/gbo#part_of_directly">part of directly</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#hardware_subpart" title="http://w3id.org/gbo#hardware_subpart">hardware subpart</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_elementary_subpart" title="http://w3id.org/gbo#hardware_elementary_subpart">hardware elementary subpart</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="item">
+  <h3>item<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#item</p>
+  <div class="comment">
+   <span class="markdown">System level element that is (according to ISO26262) system (3.163) or combination of systems (3.163), to which ISO 26262 is applied, that implements a function or part of a function at the vehicle level. Note 1 to entry: See vehicle function (3.178).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    (<a href="#system" title="http://w3id.org/gbo#system">system</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> (<a href="#has_part" title="http://w3id.org/gbo#has_part">has part</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#system" title="http://w3id.org/gbo#system">system</a> <sup class="type-c" title="class">c</sup>) <span class="logic">or</span> (<a href="#part_of" title="http://w3id.org/gbo#part_of">part of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#system" title="http://w3id.org/gbo#system">system</a> <sup class="type-c" title="class">c</sup>)) <span class="logic">and</span> (<a href="#implements" title="http://w3id.org/gbo#implements">implements</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#vehicle_function" title="http://w3id.org/gbo#vehicle_function">vehicle function</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#system_level_element" title="http://w3id.org/gbo#system_level_element">system level element</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="legal_boundary_condition">
+  <h3>legal boundary conditon<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#legal_boundary_condition</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#context" title="http://w3id.org/gbo#context">context</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="lidar">
+  <h3>lidar<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#lidar</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#sensor" title="http://w3id.org/gbo#sensor">sensor</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="market">
+  <h3>market<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#market</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#context" title="http://w3id.org/gbo#context">context</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="material_object">
+  <h3>material object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#material_object</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000030" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000030">B F O 0000030</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/measure">
+  <h3>measure<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/measure</p>
+  <div class="comment">
+   <span class="markdown">A bfo:quality that are amounts of quantities.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000019" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000019">B F O 0000019</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">has unit</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue">has value</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="mechanical_object">
+  <h3>mechanical object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#mechanical_object</p>
+  <div class="comment">
+   <span class="markdown">An engineered object that has mechanical characteristics. They can be either dominant mechanical characteristics like in a vehicle or wheel or less dominant like in a battery.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>vehicle</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#engineered_object" title="http://w3id.org/gbo#engineered_object">engineered object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="non_functional_requirement">
+  <h3>non functional requirement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#non_functional_requirement</p>
+  <div class="comment">
+   <span class="markdown">A requirement that describes how the system works.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#requirement" title="http://w3id.org/gbo#requirement">requirement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="non_system_level_element">
+  <h3>non system level element<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#non_system_level_element</p>
+  <div class="comment">
+   <span class="markdown">An element that is not on the system-level</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#element" title="http://w3id.org/gbo#element">element</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#hardware_element" title="http://w3id.org/gbo#hardware_element">hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#system_level_element" title="http://w3id.org/gbo#system_level_element">system level element</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="operating_time">
+  <h3>operating time<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#operating_time</p>
+  <div class="comment">
+   <span class="markdown">A quantity that is (according to ISO 26262) a cumulative time that an item (3.84) or element (3.41) is functioning, including degraded modes.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/quantity" title="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity">quantity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="performance">
+  <h3>performance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#performance</p>
+  <div class="comment">
+   <span class="markdown">a gbo:property on how well a person, machine, etc. does a piece of work or an activity</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    https://dictionary.cambridge.org/dictionary/english/performance
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#property" title="http://w3id.org/gbo#property">property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="processing">
+  <h3>processing<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#processing</p>
+  <div class="comment">
+   <span class="markdown">A gbo:function to calculate a set of instructions or software</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#function" title="http://w3id.org/gbo#function">function</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="processing_element">
+  <h3>processing element<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#processing_element</p>
+  <div class="comment">
+   <span class="markdown">(according to ISO26262) hardware part (3.71) providing a set of functions for data processing, normally consisting of a register set, an execution unit, and a control unit</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#hardware_part" title="http://w3id.org/gbo#hardware_part">hardware part</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#executes" title="http://w3id.org/gbo#executes">executes</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#is_executed_by" title="http://w3id.org/gbo#is_executed_by">is executed by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="property">
+  <h3>property<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#property</p>
+  <div class="comment">
+   <span class="markdown">A quality or characteristic of an element, hardware, software or function. A property has a boolean, integer, or real variable through the measure class. Specifically properties can be unquantified and quantified. But quantified properties are quantities.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>drag coefficient</pre>
+   </dd>
+   <dd>
+    <pre>power</pre>
+   </dd>
+   <dd>
+    <pre>temperature</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000019" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000019">B F O 0000019</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#dependency" title="http://w3id.org/gbo#dependency">dependency</a> <sup class="type-c" title="class">c</sup>, <a href="#performance" title="http://w3id.org/gbo#performance">performance</a> <sup class="type-c" title="class">c</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/quantity" title="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity">quantity</a> <sup class="type-c" title="class">c</sup>, <a href="#requirement" title="http://w3id.org/gbo#requirement">requirement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#depends_on" title="http://w3id.org/gbo#depends_on">depends on</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue">has value</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#has_property" title="http://w3id.org/gbo#has_property">has property</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity">
+  <h3>quantity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/quantity</p>
+  <div class="comment">
+   <span class="markdown">A quantity is a (property that is quanitifiable and a) representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#property" title="http://w3id.org/gbo#property">property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#operating_time" title="http://w3id.org/gbo#operating_time">operating time</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="radar">
+  <h3>radar<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#radar</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#sensor" title="http://w3id.org/gbo#sensor">sensor</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="requirement">
+  <h3>requirement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#requirement</p>
+  <div class="comment">
+   <span class="markdown">A property that is wanted or needed.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    https://www.merriam-webster.com/dictionary/requirement
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#property" title="http://w3id.org/gbo#property">property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#functional_requirement" title="http://w3id.org/gbo#functional_requirement">functional requirement</a> <sup class="type-c" title="class">c</sup>, <a href="#non_functional_requirement" title="http://w3id.org/gbo#non_functional_requirement">non functional requirement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="sensing">
+  <h3>sensing<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#sensing</p>
+  <div class="comment">
+   <span class="markdown">A gbo:function to perceive an object</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#function" title="http://w3id.org/gbo#function">function</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="sensor">
+  <h3>sensor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#sensor</p>
+  <div class="comment">
+   <span class="markdown">Hardware component that implements some sensing function.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Not defined in ISO26262</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>accelerometer</pre>
+   </dd>
+   <dd>
+    <pre>humidity sensor</pre>
+   </dd>
+   <dd>
+    <pre>radar</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/Sensor" target="_blank" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>, <a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#camera" title="http://w3id.org/gbo#camera">camera</a> <sup class="type-c" title="class">c</sup>, <a href="#lidar" title="http://w3id.org/gbo#lidar">lidar</a> <sup class="type-c" title="class">c</sup>, <a href="#radar" title="http://w3id.org/gbo#radar">radar</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="social_object">
+  <h3>social object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#social_object</p>
+  <div class="comment">
+   <span class="markdown">An object or object aggregate that stands in a social role.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>organisation</pre>
+   </dd>
+   <dd>
+    <pre>person</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000040" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000040">B F O 0000040</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="software_element">
+  <h3>software<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#software_element</p>
+  <div class="comment">
+   <span class="markdown">From definition of element: Note 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000031" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000031">B F O 0000031</a> <sup class="type-c" title="class">c</sup>, <a href="#non_system_level_element" title="http://w3id.org/gbo#non_system_level_element">non system level element</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#embedded_software" title="http://w3id.org/gbo#embedded_software">embedded software</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#is_executed_by" title="http://w3id.org/gbo#is_executed_by">is executed by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#executes" title="http://w3id.org/gbo#executes">executes</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#hardware_element" title="http://w3id.org/gbo#hardware_element">hardware</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="software_component">
+  <h3>software component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#software_component</p>
+  <div class="comment">
+   <span class="markdown">one or more softwareunits (3.159)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#software_unit" title="http://w3id.org/gbo#software_unit">software unit</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#software_unit" title="http://w3id.org/gbo#software_unit">software unit</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">min</span> 1 <a href="#software_unit" title="http://w3id.org/gbo#software_unit">software unit</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#component" title="http://w3id.org/gbo#component">component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#hardware_component" title="http://w3id.org/gbo#hardware_component">hardware component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="software_unit">
+  <h3>software unit<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#software_unit</p>
+  <div class="comment">
+   <span class="markdown">a piece of software that is (according to ISO26262) an atomic level software component (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">exactly</span> 0 <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="system">
+  <h3>system<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#system</p>
+  <div class="comment">
+   <span class="markdown">System level element that is according to ISO 26262: set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another. Note 1 to entry: The related sensor or actuator can be included in the system, or can be external to the system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#system_level_element" title="http://w3id.org/gbo#system_level_element">system level element</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> ((<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#actuator" title="http://w3id.org/gbo#actuator">actuator</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#controller" title="http://w3id.org/gbo#controller">controller</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="http://w3id.org/gbo#comprised_of" target="_blank" title="http://w3id.org/gbo#comprised_of">comprised of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#sensor" title="http://w3id.org/gbo#sensor">sensor</a> <sup class="type-c" title="class">c</sup>))
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#electronic_control_unit" title="http://w3id.org/gbo#electronic_control_unit">ECU</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="system_level_element">
+  <h3>system level element<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#system_level_element</p>
+  <div class="comment">
+   <span class="markdown">An element that is on the system level</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#element" title="http://w3id.org/gbo#element">element</a> <sup class="type-c" title="class">c</sup>, <a href="#engineered_object" title="http://w3id.org/gbo#engineered_object">engineered object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#item" title="http://w3id.org/gbo#item">item</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#non_system_level_element" title="http://w3id.org/gbo#non_system_level_element">non system level element</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/unit">
+  <h3>unit<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/unit</p>
+  <div class="comment">
+   <span class="markdown">A quality that is any standard used for comparison in measurements.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000019" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000019">B F O 0000019</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">has unit</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="vehicle_function">
+  <h3>vehicle function<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#vehicle_function</p>
+  <div class="comment">
+   <span class="markdown">A gbo:function that is (according to ISO26262) behaviour of the vehicle, intended by the implementation of one or more items (3.84), that is observable by the customer.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>An “automatic cruise control” is a vehicle function that can be implemented, using different ECUs and a variety of sensor technology (e.g. Radar, Lidar, Camera).</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#function" title="http://w3id.org/gbo#function">function</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#automatic_cruise_control" title="http://w3id.org/gbo#automatic_cruise_control">automatic cruise control</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#depends_on" title="http://w3id.org/gbo#depends_on"> <span>depends on</span> </a></li>
+  <li><a href="#executes" title="http://w3id.org/gbo#executes"> <span>executes</span> </a></li>
+  <li><a href="#has_part" title="http://w3id.org/gbo#has_part"> <span>has part</span> </a></li>
+  <li><a href="#has_part_directly" title="http://w3id.org/gbo#has_part_directly"> <span>has part directly</span> </a></li>
+  <li><a href="#has_property" title="http://w3id.org/gbo#has_property"> <span>has property</span> </a></li>
+  <li><a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">has unit</a></li>
+  <li><a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue">has value</a></li>
+  <li><a href="#implements" title="http://w3id.org/gbo#implements"> <span>implements</span> </a></li>
+  <li><a href="#is_executed_by" title="http://w3id.org/gbo#is_executed_by"> <span>is executed by</span> </a></li>
+  <li><a href="#is_implemented_by" title="http://w3id.org/gbo#is_implemented_by"> <span>is implemented by</span> </a></li>
+  <li><a href="#part_of" title="http://w3id.org/gbo#part_of"> <span>part of</span> </a></li>
+  <li><a href="#part_of_directly" title="http://w3id.org/gbo#part_of_directly"> <span>part of directly</span> </a></li>
+  <li><a href="#property_of" title="http://w3id.org/gbo#property_of"> <span>property of</span> </a></li>
+ </ul>
+ <div class="entity" id="depends_on">
+  <h3>depends on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#depends_on</p>
+  <div class="comment">
+   <span class="markdown">Links properties with dependencies.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> symmetric</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#property" title="http://w3id.org/gbo#property">property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#dependency" title="http://w3id.org/gbo#dependency">dependency</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="executes">
+  <h3>executes<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#executes</p>
+  <div class="comment">
+   <span class="markdown">Relates a processing unit to the software which runs on it</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#processing_element" title="http://w3id.org/gbo#processing_element">processing element</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#is_executed_by" title="http://w3id.org/gbo#is_executed_by">is executed by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="has_part">
+  <h3>has part<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#has_part</p>
+  <div class="comment">
+   <span class="markdown">models hierarchical de-composition/integration</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#part_of" title="http://w3id.org/gbo#part_of">part of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="has_part_directly">
+  <h3>has part directly<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#has_part_directly</p>
+  <div class="comment">
+   <span class="markdown">models hierarchical de-composition/integration of direct parts</span>
+  </div>
+ </div>
+ <div class="entity" id="has_property">
+  <h3>has property<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#has_property</p>
+  <div class="comment">
+   <span class="markdown">links elements to their properties</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#element" title="http://w3id.org/gbo#element">element</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#property" title="http://w3id.org/gbo#property">property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#property_of" title="http://w3id.org/gbo#property_of">property of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
+  <h3>has unit<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit</p>
+  <div class="comment">
+   <span class="markdown">Links measure with their unit</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/measure" title="http://www.ontology-of-units-of-measure.org/resource/om-2/measure">measure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/unit" title="http://www.ontology-of-units-of-measure.org/resource/om-2/unit">unit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue">
+  <h3>has value<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue</p>
+  <div class="comment">
+   <span class="markdown">Links properties or quantities to their measure (concrete value)</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#property" title="http://w3id.org/gbo#property">property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/measure" title="http://www.ontology-of-units-of-measure.org/resource/om-2/measure">measure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="implements">
+  <h3>implements<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#implements</p>
+  <div class="comment">
+   <span class="markdown">Links elements their functions</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#element" title="http://w3id.org/gbo#element">element</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#is_implemented_by" title="http://w3id.org/gbo#is_implemented_by">is implemented by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="is_executed_by">
+  <h3>is executed by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#is_executed_by</p>
+  <div class="comment">
+   <span class="markdown">Relates the software to the processing unit on which it runs</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#software_element" title="http://w3id.org/gbo#software_element">software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#processing_element" title="http://w3id.org/gbo#processing_element">processing element</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#executes" title="http://w3id.org/gbo#executes">executes</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="is_implemented_by">
+  <h3>is implemented by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#is_implemented_by</p>
+  <div class="comment">
+   <span class="markdown">Links functions to their elements</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#function" title="http://w3id.org/gbo#function">function</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#element" title="http://w3id.org/gbo#element">element</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#implements" title="http://w3id.org/gbo#implements">implements</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="part_of">
+  <h3>part of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#part_of</p>
+  <div class="comment">
+   <span class="markdown">models hierarchical de-composition/integration</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#part_of_directly" title="http://w3id.org/gbo#part_of_directly">part of directly</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#has_part" title="http://w3id.org/gbo#has_part">has part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="part_of_directly">
+  <h3>part of directly<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#part_of_directly</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#part_of" title="http://w3id.org/gbo#part_of">part of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="property_of">
+  <h3>property of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/gbo#property_of</p>
+  <div class="comment">
+   <span class="markdown">links properties back to their components</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#has_property" title="http://w3id.org/gbo#has_property">has property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

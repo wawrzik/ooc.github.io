@@ -1,0 +1,770 @@
+@prefix : <http://w3id.org/gbo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/gbo#> .
+
+<http://w3id.org/gbo> rdf:type owl:Ontology ;
+                       owl:versionIRI <http://w3id.org/gbo/0.2.4> ;
+                       owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> ;
+                       <http://purl.org/dc/elements/1.1/description> "Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL!. It supports the modelling of microlectronic components like sensors, acutators, processors and software along the automotive value chain." ;
+                       <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0/" ;
+                       <http://purl.org/dc/elements/1.1/title> "GENIAL! Basic Ontology" ;
+                       <http://purl.org/dc/terms/contributor> "Christoph Grimm" ,
+                                                              "Peter Neumann" ;
+                       <http://purl.org/dc/terms/created> "2024-09-12" ;
+                       <http://purl.org/dc/terms/creator> "Frank Wawrzik" ;
+                       <http://purl.org/dc/terms/title> "GENIAL! Basic Ontology" ;
+                       rdfs:label "GENIAL! Basic Ontology" ;
+                       owl:versionInfo "0.2.4" ;
+                       <http://xmlns.com/foaf/0.1/homepage> "https://cps.cs.uni-kl.de/mitarbeiter/frank-wawrzik-msc" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://w3id.org/gbo#atTime
+:atTime rdf:type owl:AnnotationProperty ;
+        <http://purl.obolibrary.org/obo/IAO_0000112> "e.g. law_for_banning_combustion_engines bans combustion engine atTime 2030-10-26T21:32:52 (xsd:DateTime)" ;
+        rdfs:comment "used to annotate triples" ;
+        rdfs:range xsd:dateTime .
+
+
+###  http://w3id.org/gbo#hasAPPELFormula
+:hasAPPELFormula rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/gbo#comprised_of
+:comprised_of rdf:type owl:ObjectProperty .
+
+
+###  http://w3id.org/gbo#depends_on
+:depends_on rdf:type owl:ObjectProperty ,
+                     owl:SymmetricProperty ;
+            rdfs:domain :property ;
+            rdfs:range :dependency ;
+            <http://purl.obolibrary.org/obo/IAO_0000115> "Links properties with dependencies." .
+
+
+###  http://w3id.org/gbo#executes
+:executes rdf:type owl:ObjectProperty ;
+          owl:inverseOf :is_executed_by ;
+          rdfs:domain :processing_element ;
+          rdfs:range :software_element ;
+          rdfs:comment "Relates a processing unit to the software which runs on it" .
+
+
+###  http://w3id.org/gbo#has_part
+:has_part rdf:type owl:ObjectProperty ;
+          owl:inverseOf :part_of ;
+          <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
+
+
+###  http://w3id.org/gbo#has_part_directly
+:has_part_directly rdf:type owl:ObjectProperty ;
+                   rdfs:comment "models hierarchical de-composition/integration of direct parts" .
+
+
+###  http://w3id.org/gbo#has_property
+:has_property rdf:type owl:ObjectProperty ;
+              owl:inverseOf :property_of ;
+              rdfs:domain :element ;
+              rdfs:range :property ;
+              <http://purl.obolibrary.org/obo/IAO_0000115> "links elements to their properties" .
+
+
+###  http://w3id.org/gbo#implements
+:implements rdf:type owl:ObjectProperty ;
+            owl:inverseOf :is_implemented_by ;
+            rdfs:domain :element ;
+            rdfs:comment "Links elements their functions" .
+
+
+###  http://w3id.org/gbo#is_executed_by
+:is_executed_by rdf:type owl:ObjectProperty ;
+                rdfs:domain :software_element ;
+                rdfs:range :processing_element ;
+                rdfs:comment "Relates the software to the processing unit on which it runs" .
+
+
+###  http://w3id.org/gbo#is_implemented_by
+:is_implemented_by rdf:type owl:ObjectProperty ;
+                   rdfs:domain :function ;
+                   rdfs:range :element ;
+                   rdfs:comment "Links functions to their elements" .
+
+
+###  http://w3id.org/gbo#part_of
+:part_of rdf:type owl:ObjectProperty ;
+         <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
+
+
+###  http://w3id.org/gbo#part_of_directly
+:part_of_directly rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :part_of .
+
+
+###  http://w3id.org/gbo#property_of
+:property_of rdf:type owl:ObjectProperty ;
+             <http://purl.obolibrary.org/obo/IAO_0000115> "links properties back to their components" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                    rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/unit> ;
+                                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "Links measure with their unit" ;
+                                                                    rdfs:label "has unit" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain :property ;
+                                                                     rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                     <http://purl.obolibrary.org/obo/IAO_0000115> "Links properties or quantities to their measure (concrete value)" ;
+                                                                     rdfs:label "has value" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/gbo#hasLowerBoundNumericalValue
+:hasLowerBoundNumericalValue rdf:type owl:DatatypeProperty .
+
+
+###  http://w3id.org/gbo#hasUpperBoundNumericalValue
+:hasUpperBoundNumericalValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/gbo#actuating
+:actuating rdf:type owl:Class ;
+           rdfs:subClassOf :function ;
+           owl:disjointWith :hardware_elementary_subpart ;
+           <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:function to change or control an object" .
+
+
+###  http://w3id.org/gbo#actuator
+:actuator rdf:type owl:Class ;
+          rdfs:subClassOf :hardware_component ,
+                          <http://www.w3.org/ns/sosa/Actuator> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :implements ;
+                            owl:someValuesFrom :actuating
+                          ] ;
+          <http://purl.obolibrary.org/obo/IAO_0000115> "An actuator is a hardware component that implements some actuating function and is responsible for moving or controlling a mechanism or system." ;
+          rdfs:comment "Not defined in ISO26262" .
+
+
+###  http://w3id.org/gbo#automatic_cruise_control
+:automatic_cruise_control rdf:type owl:Class ;
+                          rdfs:subClassOf :vehicle_function ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :is_implemented_by ;
+                                            owl:someValuesFrom :camera
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :is_implemented_by ;
+                                            owl:someValuesFrom :electronic_control_unit
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :is_implemented_by ;
+                                            owl:someValuesFrom :lidar
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :is_implemented_by ;
+                                            owl:someValuesFrom :radar
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :is_implemented_by ;
+                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :electronic_control_unit
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :is_implemented_by ;
+                                            owl:minQualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :sensor
+                                          ] ;
+                          <http://purl.obolibrary.org/obo/IAO_0000115> "An “automatic cruise control” is a vehicle function that can be implemented, using different ECUs and a variety of sensor technology (e.g. Radar, Lidar, Camera)." ;
+                          rdfs:label "automatic cruise control" .
+
+
+###  http://w3id.org/gbo#camera
+:camera rdf:type owl:Class ;
+        rdfs:subClassOf :sensor .
+
+
+###  http://w3id.org/gbo#component
+:component rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :non_system_level_element
+                                                      [ rdf:type owl:Class ;
+                                                        owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty :comprised_of ;
+                                                                                               owl:someValuesFrom :hardware_part
+                                                                                             ]
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty :comprised_of ;
+                                                                                               owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                               owl:onClass :hardware_part
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ]
+                                                                      [ rdf:type owl:Class ;
+                                                                        owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :comprised_of ;
+                                                                                        owl:someValuesFrom :software_component
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :comprised_of ;
+                                                                                        owl:someValuesFrom :software_unit
+                                                                                      ]
+                                                                                    )
+                                                                      ]
+                                                                    )
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :part_of_directly ;
+                                                        owl:someValuesFrom :system
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           <http://purl.obolibrary.org/obo/IAO_0000112> "A microcontroller" ;
+           <http://purl.obolibrary.org/obo/IAO_0000115> """According to ISO26262: non-system level element (3.41) that is logically or technically separable and is comprised of more than one hardware part (3.71) or one or more software units (3.159). 
+
+A component is a part of a system (3.163).""" .
+
+
+###  http://w3id.org/gbo#context
+:context rdf:type owl:Class ;
+         <http://purl.obolibrary.org/obo/IAO_0000115> "The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood, e.g. Market, legal  frame conditions" ;
+         rdfs:label "context" .
+
+
+###  http://w3id.org/gbo#controller
+:controller rdf:type owl:Class ;
+            rdfs:subClassOf :component ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_part_directly ;
+                              owl:someValuesFrom :processing_element
+                            ] .
+
+
+###  http://w3id.org/gbo#dependency
+:dependency rdf:type owl:Class ;
+            rdfs:subClassOf :property ;
+            <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:property that is a boolean or arithmetic function / equation on properties. Used to be calculated with GENIAL constraint propagation. As string in LaTex syntax." ;
+            rdfs:label "dependency" .
+
+
+###  http://w3id.org/gbo#electronic_control_unit
+:electronic_control_unit rdf:type owl:Class ;
+                         rdfs:subClassOf :system ;
+                         rdfs:label "ECU" ,
+                                    "electronic control unit" .
+
+
+###  http://w3id.org/gbo#element
+:element rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000002> ;
+         owl:disjointWith [ rdf:type owl:Class ;
+                            owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000020>
+                                          <http://purl.obolibrary.org/obo/BFO_0000141>
+                                          :context
+                                        )
+                          ] ;
+         <http://purl.obolibrary.org/obo/IAO_0000115> "Continuant that is (according to ISO 26262) a system (3.163), components (3.21) (hardware or software), hardware parts (3.71), or software units (3.159)" .
+
+
+###  http://w3id.org/gbo#embedded_software
+:embedded_software rdf:type owl:Class ;
+                   rdfs:subClassOf :software_element ;
+                   <http://purl.obolibrary.org/obo/IAO_0000115> "a software that is (according to ISO 26262) fully-integrated software to be executed on a processing element (3.113)" ;
+                   rdfs:label "embedded software" .
+
+
+###  http://w3id.org/gbo#engineered_object
+:engineered_object rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                   <http://purl.obolibrary.org/obo/IAO_0000115> "An object created, designed or engineered by humans." ;
+                   rdfs:label "engineered object" .
+
+
+###  http://w3id.org/gbo#function
+:function rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
+          <http://purl.obolibrary.org/obo/IAO_0000115> "A bfo:function that an element (e.g. system, component, hardware or software) implements." .
+
+
+###  http://w3id.org/gbo#functional_requirement
+:functional_requirement rdf:type owl:Class ;
+                        rdfs:subClassOf :requirement ;
+                        <http://purl.obolibrary.org/obo/IAO_0000115> "A requirement that specifies something the system should do." ;
+                        <http://purl.obolibrary.org/obo/IAO_0000119> "https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/" ;
+                        rdfs:label "functional requirement" .
+
+
+###  http://w3id.org/gbo#hardware_component
+:hardware_component rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :hardware_element
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :comprised_of ;
+                                                                 owl:allValuesFrom :hardware_part
+                                                               ]
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :comprised_of ;
+                                                                 owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass :hardware_part
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf :component ;
+                    owl:disjointWith :software_component ;
+                    <http://purl.obolibrary.org/obo/IAO_0000112> "actuator" ,
+                                                                 "multi core" ,
+                                                                 "sensor" ;
+                    <http://purl.obolibrary.org/obo/IAO_0000115> "No ISO definition. Formal Definition derived from other definitions." ;
+                    rdfs:label "hardware component" .
+
+
+###  http://w3id.org/gbo#hardware_element
+:hardware_element rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:unionOf ( :hardware_component
+                                                      :hardware_elementary_subpart
+                                                      :hardware_part
+                                                      :hardware_subpart
+                                                    )
+                                      ] ;
+                  rdfs:subClassOf :engineered_object ,
+                                  :non_system_level_element ;
+                  owl:disjointWith :software_element ;
+                  rdfs:comment """From definition of element:
+Note 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively.""" ;
+                  rdfs:label "hardware" ,
+                             "hardware element" .
+
+
+###  http://w3id.org/gbo#hardware_elementary_subpart
+:hardware_elementary_subpart rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( :hardware_element
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :part_of_directly ;
+                                                                          owl:allValuesFrom :hardware_subpart
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             <http://purl.obolibrary.org/obo/IAO_0000112> "A flip-flop of the ALU with its logic cone, a register." ;
+                             <http://purl.obolibrary.org/obo/IAO_0000115> "smallest portion of a hardware subpart (3.73) considered in safety (3.132) analysis" ;
+                             rdfs:label "hardware elementary subpart" .
+
+
+###  http://w3id.org/gbo#hardware_part
+:hardware_part rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :hardware_element
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :part_of_directly ;
+                                                            owl:allValuesFrom :component
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               <http://purl.obolibrary.org/obo/IAO_0000112> "The CPU of a microcontroller, a resistor, flash array of a microcontroller." ;
+               <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of hardware that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition." ;
+               rdfs:label "hardware part" .
+
+
+###  http://w3id.org/gbo#hardware_subpart
+:hardware_subpart rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :hardware_element
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :has_part_directly ;
+                                                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                   owl:unionOf ( :hardware_elementary_subpart
+                                                                                                 :hardware_subpart
+                                                                                               )
+                                                                                 ]
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :part_of_directly ;
+                                                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                   owl:unionOf ( :hardware_part
+                                                                                                 :hardware_subpart
+                                                                                               )
+                                                                                 ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  <http://purl.obolibrary.org/obo/IAO_0000112> "ALU of a CPU of a microcontroller" ,
+                                                               "register bank of a CPU" ;
+                  <http://purl.obolibrary.org/obo/IAO_0000115> "Portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition." ;
+                  rdfs:label "hardware subpart" .
+
+
+###  http://w3id.org/gbo#item
+:item rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                   owl:unionOf ( :system
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :has_part ;
+                                                                   owl:someValuesFrom :system
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :part_of ;
+                                                                   owl:someValuesFrom :system
+                                                                 ]
+                                                               )
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :implements ;
+                                                   owl:allValuesFrom :vehicle_function
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :system_level_element ;
+      <http://purl.obolibrary.org/obo/IAO_0000115> """System level element that is (according to ISO26262) system (3.163) or combination of systems (3.163), to which ISO 26262 is applied, that implements a function or part of a function at the vehicle level.
+
+Note 1 to entry: See vehicle function (3.178).""" .
+
+
+###  http://w3id.org/gbo#legal_boundary_condition
+:legal_boundary_condition rdf:type owl:Class ;
+                          rdfs:subClassOf :context ;
+                          rdfs:label "legal boundary conditon" .
+
+
+###  http://w3id.org/gbo#lidar
+:lidar rdf:type owl:Class ;
+       rdfs:subClassOf :sensor .
+
+
+###  http://w3id.org/gbo#market
+:market rdf:type owl:Class ;
+        rdfs:subClassOf :context ;
+        rdfs:label "market" .
+
+
+###  http://w3id.org/gbo#material_object
+:material_object rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                 rdfs:label "material object" .
+
+
+###  http://w3id.org/gbo#mechanical_object
+:mechanical_object rdf:type owl:Class ;
+                   rdfs:subClassOf :engineered_object ;
+                   <http://purl.obolibrary.org/obo/IAO_0000112> "vehicle" ;
+                   <http://purl.obolibrary.org/obo/IAO_0000115> "An engineered object that has mechanical characteristics. They can be either dominant mechanical characteristics like in a vehicle or wheel or less dominant like in a battery." ;
+                   rdfs:label "mechanical object" .
+
+
+###  http://w3id.org/gbo#non_functional_requirement
+:non_functional_requirement rdf:type owl:Class ;
+                            rdfs:subClassOf :requirement ;
+                            <http://purl.obolibrary.org/obo/IAO_0000115> "A requirement that describes how the system works." ;
+                            <http://purl.obolibrary.org/obo/IAO_0000119> "https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/" ;
+                            rdfs:label "non functional requirement" .
+
+
+###  http://w3id.org/gbo#non_system_level_element
+:non_system_level_element rdf:type owl:Class ;
+                          rdfs:subClassOf :element ;
+                          owl:disjointWith :system_level_element ;
+                          <http://purl.obolibrary.org/obo/IAO_0000115> "An element that is not on the system-level" ;
+                          rdfs:label "non system level element" .
+
+
+###  http://w3id.org/gbo#operating_time
+:operating_time rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :property_of ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :element
+                                                                     :item
+                                                                   )
+                                                     ]
+                                ] ;
+                <http://purl.obolibrary.org/obo/IAO_0000115> "A quantity that is (according to ISO 26262) a cumulative time that an item (3.84) or element (3.41) is functioning, including degraded modes." ;
+                rdfs:label "operating time" .
+
+
+###  http://w3id.org/gbo#performance
+:performance rdf:type owl:Class ;
+             rdfs:subClassOf :property ;
+             <http://purl.obolibrary.org/obo/IAO_0000115> "a gbo:property on how well a person, machine, etc. does a piece of work or an activity" ;
+             <http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.cambridge.org/dictionary/english/performance" .
+
+
+###  http://w3id.org/gbo#processing
+:processing rdf:type owl:Class ;
+            rdfs:subClassOf :function ;
+            <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:function to calculate a set of instructions or software" .
+
+
+###  http://w3id.org/gbo#processing_element
+:processing_element rdf:type owl:Class ;
+                    rdfs:subClassOf :hardware_part ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :implements ;
+                                      owl:someValuesFrom :processing
+                                    ] ;
+                    <http://purl.obolibrary.org/obo/IAO_0000115> "(according to ISO26262) hardware part (3.71) providing a set of functions for data processing, normally consisting of a register set, an execution unit, and a control unit" ;
+                    rdfs:label "processing element" ,
+                               "processing unit" ,
+                               "processor" .
+
+
+###  http://w3id.org/gbo#property
+:property rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+          <http://purl.obolibrary.org/obo/IAO_0000112> "drag coefficient" ,
+                                                       "power" ,
+                                                       "temperature" ;
+          <http://purl.obolibrary.org/obo/IAO_0000115> "A quality or characteristic of an element, hardware, software or function. A property has a boolean, integer, or real variable through the measure class. Specifically properties can be unquantified and quantified. But quantified properties are quantities." ;
+          rdfs:label "property" .
+
+
+###  http://w3id.org/gbo#radar
+:radar rdf:type owl:Class ;
+       rdfs:subClassOf :sensor .
+
+
+###  http://w3id.org/gbo#requirement
+:requirement rdf:type owl:Class ;
+             rdfs:subClassOf :property ;
+             <http://purl.obolibrary.org/obo/IAO_0000115> "A property that is wanted or needed." ;
+             <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.merriam-webster.com/dictionary/requirement" .
+
+
+###  http://w3id.org/gbo#sensing
+:sensing rdf:type owl:Class ;
+         rdfs:subClassOf :function ;
+         <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:function to perceive an object" .
+
+
+###  http://w3id.org/gbo#sensor
+:sensor rdf:type owl:Class ;
+        rdfs:subClassOf :hardware_component ,
+                        <http://www.w3.org/ns/sosa/Sensor> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :implements ;
+                          owl:someValuesFrom :sensing
+                        ] ;
+        <http://purl.obolibrary.org/obo/IAO_0000112> "accelerometer" ,
+                                                     "humidity sensor" ,
+                                                     "radar" ;
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Hardware component that implements some sensing function." ;
+        rdfs:comment "Not defined in ISO26262" .
+
+
+###  http://w3id.org/gbo#social_object
+:social_object rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
+                               [ rdf:type owl:Class ;
+                                 owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000027>
+                                               <http://purl.obolibrary.org/obo/BFO_0000030>
+                                             )
+                               ] ;
+               <http://purl.obolibrary.org/obo/IAO_0000112> "organisation" ,
+                                                            "person" ;
+               <http://purl.obolibrary.org/obo/IAO_0000115> "An object or object aggregate that stands in a social role." ;
+               rdfs:label "social object" .
+
+
+###  http://w3id.org/gbo#software_component
+:software_component rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :software_element
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :comprised_of ;
+                                                                 owl:someValuesFrom :software_unit
+                                                               ]
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :comprised_of ;
+                                                                 owl:allValuesFrom :software_unit
+                                                               ]
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :comprised_of ;
+                                                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass :software_unit
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf :component ;
+                    <http://purl.obolibrary.org/obo/IAO_0000115> "one or more softwareunits (3.159)" ;
+                    rdfs:label "software component" .
+
+
+###  http://w3id.org/gbo#software_element
+:software_element rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                  :non_system_level_element ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :is_executed_by ;
+                                    owl:someValuesFrom :processing_element
+                                  ] ;
+                  rdfs:comment """From definition of element:
+Note 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively.""" ;
+                  rdfs:label "software" ,
+                             "software element" .
+
+
+###  http://w3id.org/gbo#software_unit
+:software_unit rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :software_element
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :comprised_of ;
+                                                            owl:allValuesFrom :software_element
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :comprised_of ;
+                                                            owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass :software_element
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               <http://purl.obolibrary.org/obo/IAO_0000115> "a piece of software that is (according to ISO26262) an atomic level software component (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)" ;
+               rdfs:label "software unit" .
+
+
+###  http://w3id.org/gbo#system
+:system rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :system_level_element
+                                                   [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :comprised_of ;
+                                                                            owl:someValuesFrom :actuator
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :comprised_of ;
+                                                                            owl:someValuesFrom :controller
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :comprised_of ;
+                                                                            owl:someValuesFrom :sensor
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        <http://purl.obolibrary.org/obo/IAO_0000115> """System level element that is according to ISO 26262: set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another.
+
+Note 1 to entry: The related sensor or actuator can be included in the system, or can be external to the system.""" .
+
+
+###  http://w3id.org/gbo#system_level_element
+:system_level_element rdf:type owl:Class ;
+                      rdfs:subClassOf :element ,
+                                      :engineered_object ;
+                      <http://purl.obolibrary.org/obo/IAO_0000115> "An element that is on the system level" ;
+                      rdfs:label "system level element" .
+
+
+###  http://w3id.org/gbo#vehicle_function
+:vehicle_function rdf:type owl:Class ;
+                  rdfs:subClassOf :function ;
+                  <http://purl.obolibrary.org/obo/IAO_0000112> "An “automatic cruise control” is a vehicle function that can be implemented, using different ECUs and a variety of sensor technology (e.g. Radar, Lidar, Camera)." ;
+                  <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:function that is (according to ISO26262) behaviour of the vehicle, intended by the implementation of one or more items (3.84), that is observable by the customer." ;
+                  rdfs:label "vehicle function" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/measure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+                                                                                      owl:someValuesFrom rdfs:Literal
+                                                                                    ] ;
+                                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "A bfo:quality that are amounts of quantities." ;
+                                                                    rdfs:label "measure" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/quantity
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :property ;
+                                                                     <http://purl.obolibrary.org/obo/IAO_0000115> "A quantity is a (property that is quanitifiable and a) representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length." .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/unit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A quality that is any standard used for comparison in measurements." ;
+                                                                 rdfs:label "unit" .
+
+
+###  http://www.w3.org/ns/sosa/Actuator
+<http://www.w3.org/ns/sosa/Actuator> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :hardware_component
+                :hardware_elementary_subpart
+                :hardware_part
+                :hardware_subpart
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18.2021-07-30T21:49:07Z) https://github.com/owlcs/owlapi/
